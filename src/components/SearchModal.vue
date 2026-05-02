@@ -3,6 +3,7 @@ import { ref, nextTick, watch, onMounted, onUnmounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { useSearch } from '@/composables/useSearch'
 import { formatNumber } from '@/utils/format'
+import MyInput from './MyInput.vue'
 
 const visible = defineModel({
     type: Boolean,
@@ -13,7 +14,7 @@ const router = useRouter()
 
 const search = useSearch()
 
-const inputRef = ref<HTMLInputElement | null>(null)
+const inputRef = ref<InstanceType<typeof MyInput> | null>(null)
 const resultsContainerRef = ref<HTMLDivElement | null>(null)
 const itemRefs = ref<HTMLElement[]>([])
 
@@ -35,11 +36,11 @@ const scrollToItem = (index: number) => {
 
 const handleKeydownWrapper = (e: KeyboardEvent) => {
     search.handleKeydown(e, scrollToItem)
-    
+
     if (e.key === 'Enter') {
         e.preventDefault()
         inputRef.value?.blur()
-        
+
         if (search.selectedIndex.value >= 0 && search.searchResults.value.length > 0) {
             selectRepo(search.searchResults.value[search.selectedIndex.value])
         } else if (search.searchResults.value.length > 0) {
@@ -131,7 +132,12 @@ watch(visible, async newVal => {
                             'bg-hover': index !== search.selectedIndex.value && index === search.mouseOverIndex.value,
                         }"
                         @click="selectRepo(repo)"
-                        @mouseenter="() => { search.mouseOverIndex.value = index; inputRef.value?.blur() }"
+                        @mouseenter="
+                            () => {
+                                search.mouseOverIndex.value = index
+                                inputRef?.blur()
+                            }
+                        "
                         @mouseleave="search.mouseOverIndex.value = -1">
                         <span class="i-md-repository"></span>
                         <div class="flex-1 min-w-0">
