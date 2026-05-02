@@ -4,12 +4,16 @@ import { useAppStore } from '@/stores/apps'
 import { useShortcutStore } from '@/stores/shortcuts'
 import { getCurrentWindow } from '@tauri-apps/api/window'
 import { openUrl } from '@tauri-apps/plugin-opener'
+import { convertFileSrc } from '@tauri-apps/api/core'
+import { useAuthStore } from '@/stores/auth'
+import { autoPlacement, autoUpdate, flip, offset, shift, useFloating } from '@floating-ui/vue'
 
 defineOptions({
     name: 'TitleBar',
 })
 
 const appStore = useAppStore()
+const authStore = useAuthStore()
 const shortcutStore = useShortcutStore()
 
 const sidebarToggleTooltip = ref('Toggle Sidebar')
@@ -17,6 +21,9 @@ const searchTooltip = ref('Search')
 const isPinned = ref(false)
 const showModal = ref(false)
 const showSearchModal = ref(false)
+const userContainer = ref<HTMLDivElement>()
+const optionContainer = ref<HTMLDivElement>()
+const showOption = ref(false)
 
 function initTooltip() {
     const sidebarShortcut = appStore.isMacOs ? 'Cmd+B' : 'Ctrl+B'
@@ -53,6 +60,11 @@ function showSearch() {
     showSearchModal.value = true
 }
 
+async function handleLogout() {
+    showOption.value = false
+    await authStore.logout()
+}
+
 function handleKeydown(event: KeyboardEvent): void {
     if (shortcutStore.matchesShortcut(event, 'search')) {
         event.preventDefault()
@@ -65,6 +77,14 @@ function handleKeydown(event: KeyboardEvent): void {
         appStore.toggleSidebar()
     }
 }
+
+/**
+ * Floating UI配置
+ */
+const { floatingStyles } = useFloating(userContainer, optionContainer, {
+    whileElementsMounted: autoUpdate,
+    middleware: [autoPlacement({ allowedPlacements: ['bottom'] }), offset(15)],
+})
 
 onMounted(() => {
     initTooltip()
@@ -121,6 +141,24 @@ onUnmounted(() => {
 
             <div class="i-md-setting size-4.5 cursor-pointer" @click="showModal = true"></div>
 
+            <div ref="userContainer" class="flex items-center gap-2 cursor-pointer" @click="showOption = !showOption">
+                <img
+                    :src="convertFileSrc(authStore.user?.avatar?.replace('https://', '') || '')"
+                    alt="avatar"
+                    class="size-6 rounded-full" />
+                <span>{{ authStore.user?.name }}</span>
+                <ul
+                    v-click-outside="() => (showOption = false)"
+                    ref="optionContainer"
+                    v-show="showOption"
+                    class="bg-card z-999 rounded-md w-auto border-light"
+                    :style="floatingStyles">
+                    <li>账号设置</li>
+                    <li class="border border-b-solid border-t-solid">切换账号</li>
+                    <li @click="handleLogout">退出登录</li>
+                </ul>
+            </div>
+
             <div
                 class="i-md-pin size-4.5 cursor-pointer"
                 :class="isPinned ? 'rotate-0' : 'rotate-45'"
@@ -149,3 +187,12 @@ onUnmounted(() => {
         <SearchModal v-model="showSearchModal" />
     </div>
 </template>
+
+<style lang="css" scoped>
+ul li {
+    margin: 8px 12px;
+    padding: 8px 0;
+    cursor: pointer;
+    /* margin-bottom: 4px; */
+}
+</style>

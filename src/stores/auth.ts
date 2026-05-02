@@ -1,12 +1,11 @@
 import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
 import { api } from '@/api'
-import { useMessage } from '@/composables/useMessage'
+import router from '@/router'
 
 const STORAGE_KEY_AUTH = 'starnest_auth'
 
 export const useAuthStore = defineStore('auth', () => {
-    const message = useMessage()
 
     const user = ref<{ name: string; avatar: string }>({
         name: '',
@@ -30,15 +29,34 @@ export const useAuthStore = defineStore('auth', () => {
     async function logout(): Promise<void> {
         try {
             await api.auth.logout()
+        } catch (error) {
+            console.error('Failed to call logout API:', error)
+        } finally {
             token.value = ''
             user.value = {
                 name: '',
                 avatar: '',
             }
-            localStorage.removeItem(STORAGE_KEY_AUTH)
+            clearAllLocalStorage()
+            router.push('/login')
+        }
+    }
+
+    function clearAllLocalStorage(): void {
+        try {
+            const authKey = STORAGE_KEY_AUTH
+            const keysToKeep: string[] = []
+            
+            for (let i = localStorage.length - 1; i >= 0; i--) {
+                const key = localStorage.key(i)
+                if (key && key !== authKey && !keysToKeep.includes(key)) {
+                    localStorage.removeItem(key)
+                }
+            }
+            
+            localStorage.removeItem(authKey)
         } catch (error) {
-            message.error('Logout failed')
-            throw error
+            console.error('Failed to clear localStorage:', error)
         }
     }
 

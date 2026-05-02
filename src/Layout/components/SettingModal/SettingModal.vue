@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { useAuthStore } from '@/stores/auth'
 import { ref, defineAsyncComponent, markRaw, computed } from 'vue'
 
 const props = defineProps({
@@ -9,6 +10,8 @@ const props = defineProps({
 })
 
 const emit = defineEmits(['update:modelValue'])
+
+const authStore = useAuthStore()
 
 const show = computed({
     get() {
@@ -57,12 +60,17 @@ const pagePanel: Record<string, { name: string; title: string; component: any }>
 function closeModal() {
     show.value = false
 }
+
+async function handleLogout() {
+    await authStore.logout()
+    closeModal()
+}
 </script>
 <template>
     <Modal v-model="show" title="Settings" width="1024px" height="800px" :showHeader="false">
         <div class="flex h-full">
             <!-- Sidebar -->
-            <div class="w-64 h-full border-r-1px border-r-solid border-r-border px-4 py-8 flex flex-col gap-4">
+            <div class="relative w-64 h-full border-r-1px border-r-solid border-r-border px-4 py-8 flex flex-col gap-4">
                 <div class="text-[var(--sv-text-color-3)]">Account Settings</div>
                 <div class="btn" :class="{ isActive: activeName === 'account' }" @click="activeName = 'account'">
                     Basic Settings
@@ -79,6 +87,14 @@ function closeModal() {
                     Shortcuts
                 </div>
                 <div class="btn" :class="{ isActive: activeName === 'about' }" @click="activeName = 'about'">About</div>
+
+                <div
+                    class="absolute bottom-0 right-0 border border-t-solid border-[var(--sv-border-color)] w-64 p-4 text-center">
+                    <button class="w-full border-none text-lg" @click="handleLogout">
+                        <span class="i-md-logout"></span>
+                        <span>Exit</span>
+                    </button>
+                </div>
             </div>
             <!-- Content Area -->
             <div class="flex-1 relative overflow-hidden">
