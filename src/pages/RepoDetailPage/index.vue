@@ -111,7 +111,7 @@ async function toggleStar() {
             <!-- 操作按钮 -->
             <div class="flex items-center gap-2 shrink-0">
                 <button :class="isStarred ? 'primary' : 'plain'" @click="toggleStar">
-                    <span class="text-lg" :class="isStarred ? 'i-md-star' : 'i-md-star-outline'"></span>
+                    <span class="text-lg" :class="isStarred ? 'i-md-star' : 'i-md-staroutline'"></span>
                     <span>{{ isStarred ? 'Starred' : 'Star' }}</span>
                 </button>
                 <button class="plain" @click="copyToClipboard(repo.full_name)">

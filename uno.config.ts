@@ -26,6 +26,8 @@ export default defineConfig({
         'i-md-dashboard',
         'i-md-setting',
         'i-md-note',
+        'i-md-star-outline',
+        'i-md-star',
         'i-md-collection',
         'i-md-auto-awesome',
         'i-md-search',
