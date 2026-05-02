@@ -1,0 +1,213 @@
+button {
+    background-color: var(--sv-btn-color);
+    color: var(--sv-btn-text-color);
+    border: var(--sv-btn-border);
+    border-radius: 6px;
+    font-size: 13px;
+    line-height: 1.5;
+    height: 32px;
+    padding: 0 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+button:hover {
+    background-color: rgb(var(--sv-primary) / 0.1);
+    color: var(--sv-btn-text-color-hover);
+    border: var(--sv-btn-border-hover);
+}
+
+button.primary {
+    background-color: var(--sv-btn-primary-color);
+    color: #fff;
+    border: var(--sv-btn-primary-border);
+}
+
+html[data-theme='dark'] button[class='primary'] {
+    color: var(--sv-inverted-color);
+}
+
+button.primary:hover {
+    background-color: rgb(var(--sv-primary) / 0.7);
+}
+
+button.info {
+    background-color: var(--sv-btn-info-color);
+    color: #fff;
+    border: var(--sv-btn-info-border);
+}
+
+html[data-theme='dark'] button[class='info'] {
+    color: #000;
+}
+
+button.info:hover {
+    background-color: rgb(var(--sv-info) / 0.7);
+    color: var(--sv-btn-info-border-hover);
+}
+
+button.success {
+    background-color: var(--sv-btn-success-color);
+    color: #fff;
+    border: var(--sv-btn-success-border);
+}
+
+html[data-theme='dark'] button[class='success'] {
+    color: #000;
+}
+
+button.success:hover {
+    background-color: rgb(var(--sv-success) / 0.7);
+    color: var(--sv-btn-success-border-hover);
+}
+
+button.warning {
+    background-color: var(--sv-btn-warning-color);
+    color: #fff;
+    border: var(--sv-btn-warning-border);
+}
+
+html[data-theme='dark'] button[class='warning'] {
+    color: #000;
+}
+
+button.warning:hover {
+    background-color: rgb(var(--sv-warning) / 0.7);
+    color: var(--sv-btn-warning-border-hover);
+}
+
+button.error {
+    background-color: var(--sv-btn-error-color);
+    color: #fff;
+    border: var(--sv-btn-error-border);
+}
+
+html[data-theme='dark'] button[class='error'] {
+    color: #000;
+}
+
+button.error:hover {
+    background-color: rgb(var(--sv-error) / 0.7);
+    color: var(--sv-btn-error-border-hover);
+}
+
+button.plain {
+    background-color: var(--sv-btn-color);
+    color: var(--sv-text-color-1);
+    border: 1px solid var(--sv-border-color);
+}
+
+button.plain:hover {
+    color: var(--sv-primary-solid);
+    border-color: var(--sv-primary-solid);
+}
+
+button.primary.plain {
+    background-color: rgb(var(--sv-primary) / 0.1);
+    color: var(--sv-primary-solid);
+    border-color: rgb(var(--sv-primary) / 0.1);
+}
+
+button.primary.plain:hover {
+    background-color: rgb(var(--sv-primary) / 0.3);
+}
+
+button.info.plain {
+    background-color: rgb(var(--sv-info) / 0.1);
+    color: var(--sv-info-solid);
+    border-color: rgb(var(--sv-info) / 0.1);
+}
+
+button.info.plain:hover {
+    background-color: rgb(var(--sv-info) / 0.3);
+}
+
+button.success.plain {
+    background-color: rgb(var(--sv-success) / 0.1);
+    color: var(--sv-success-solid);
+    border-color: rgb(var(--sv-success) / 0.1);
+}
+
+button.success.plain:hover {
+    background-color: rgb(var(--sv-success) / 0.3);
+}
+
+button.warning.plain {
+    background-color: rgb(var(--sv-warning) / 0.1);
+    color: var(--sv-warning-solid);
+    border-color: rgb(var(--sv-warning) / 0.1);
+}
+
+button.warning.plain:hover {
+    background-color: rgb(var(--sv-warning) / 0.3);
+}
+
+button.error.plain {
+    background-color: rgb(var(--sv-error) / 0.1);
+    color: var(--sv-error-solid);
+    border-color: rgb(var(--sv-error) / 0.1);
+}
+
+button.error.plain:hover {
+    background-color: rgb(var(--sv-error) / 0.3);
+}
+
+button.dashed {
+    border-style: dashed !important;
+}
+
+button.dashed {
+    border-style: dashed !important;
+}
+
+button.primary.dashed {
+    background-color: transparent;
+    color: var(--sv-primary-solid) !important;
+    border: 1px solid rgb(var(--sv-primary) / 0.3);
+}
+
+button.primary.dashed:hover {
+    border-color: rgb(var(--sv-primary) / 0.7);
+}
+
+button.info.dashed {
+    background-color: transparent;
+    color: var(--sv-info-solid) !important;
+    border: 1px solid rgb(var(--sv-info) / 0.3);
+}
+
+button.info.dashed:hover {
+    border-color: rgb(var(--sv-info) / 0.7);
+}
+
+button.success.dashed {
+    background-color: transparent;
+    color: var(--sv-success-solid) !important;
+    border: 1px solid rgb(var(--sv-success) / 0.3);
+}
+
+button.success.dashed:hover {
+    border-color: rgb(var(--sv-success) / 0.7);
+}
+
+button.warning.dashed {
+    background-color: transparent;
+    color: var(--sv-warning-solid) !important;
+    border: 1px solid rgb(var(--sv-warning) / 0.3);
+}
+
+button.warning.dashed:hover {
+    border-color: rgb(var(--sv-warning) / 0.7);
+}
+
+button.error.dashed {
+    background-color: transparent;
+    color: var(--sv-error-solid) !important;
+    border: 1px solid rgb(var(--sv-error) / 0.3);
+}
+
+button.error.dashed:hover {
+    border-color: rgb(var(--sv-error) / 0.7);
+}

@@ -1,0 +1,508 @@
+/* ================================================================
+ *  Naive UI 语义色 Token
+ *  从 naive-ui@2.39.0 源码提取
+ *  https://github.com/tusen-ai/naive-ui
+ * ================================================================ */
+
+/* ================================================================
+ *  亮色主题（Light）
+ * ================================================================ */
+:root {
+    /* ── 基础语义色（4 状态） ──────────────────────────── */
+
+    /* Primary（主色） */
+    --sv-primary: 47 84 235;
+    --sv-primary-solid: #2f54eb;
+    --sv-primary-hover: 80 111 238; /* hover  hsl(228, 82%, 62%) */
+    --sv-primary-hover-solid: #526fee;
+    --sv-primary-pressed: 39 71 197; /* pressed hsl(228, 67%, 46%) */
+    --sv-primary-pressed-solid: #2747c5;
+    --sv-primary-suppl: 80 111 238; /* suppl  = hover */
+    --sv-primary-suppl-solid: #526fee;
+
+    /* Info（信息） */
+    --sv-info: 32 128 240;
+    --sv-info-solid: #2080f0;
+    --sv-info-hover: 64 152 252; /* hover  hsl(228, 82%, 62%) */
+    --sv-info-hover-solid: #4098fc;
+    --sv-info-pressed: 16 96 201; /* pressed hsl(228, 62%, 42%) */
+    --sv-info-pressed-solid: #1060c9;
+    --sv-info-suppl: 64 152 252; /* suppl  = hover */
+    --sv-info-suppl-solid: #4098fc;
+
+    /* Success（成功）— 与 Primary 同色 */
+    --sv-success: 24 160 88;
+    --sv-success-solid: #18a058;
+    --sv-success-hover: 54 173 106; /* hover  hsl(228, 82%, 62%) */
+    --sv-success-hover-solid: rgb(54, 173, 106);
+    --sv-success-pressed: 12 122 67; /* pressed hsl(228, 62%, 442%) */
+    --sv-success-pressed-solid: rgb(12, 122, 67);
+    --sv-success-suppl: 54 173 106; /* suppl  = hover */
+    --sv-success-suppl-solid: rgb(54, 173, 106);
+
+    /* Warning（警告） */
+    --sv-warning: 240 160 32;
+    --sv-warning-solid: #f0a020;
+    --sv-warning-hover: 252 176 64; /* hover  hsl(228, 82%, 62%) */
+    --sv-warning-hover-solid: rgb(252, 176, 64);
+    --sv-warning-pressed: 201 124 16; /* pressed hsl(228, 62%, 42%) */
+    --sv-warning-pressed-solid: rgb(201, 124, 16);
+    --sv-warning-suppl: 252 176 64; /* suppl  = hover */
+    --sv-warning-suppl-solid: rgb(252, 176, 64);
+
+    /* Error（错误） */
+    --sv-error: 208 48 80;
+    --sv-error-solid: #d03050;
+    --sv-error-hover: 222 87 109; /* hover  hsl(228, 82%, 62%) */
+    --sv-error-hover-solid: rgb(222, 87, 109);
+    --sv-error-pressed: 171 31 63; /* pressed hsl(228, 62%, 42%) */
+    --sv-error-pressed-solid: rgb(171, 31, 63);
+    --sv-error-suppl: 222 87 109; /* suppl  = hover */
+    --sv-error-suppl-solid: rgb(222, 87, 109);
+
+    /* ── 中性色 ──────────────────────────────────────── */
+    --sv-base-color: #fcfcfd;
+    --sv-body-color: #f9fafb;
+    --sv-card-color: #f6f7f9;
+    --sv-modal-color: #f3f4f7;
+    --sv-popover-color: #f0f1f5;
+    --sv-inverted-color: #1a1c23;
+    --sv-modal-mask-color: rgba(0, 0, 0, 0.5);
+
+    /* ── 文字色 ──────────────────────────────────────── */
+    --sv-text-color-1: rgb(31, 34, 37);
+    --sv-text-color-2: rgb(51, 54, 57);
+    --sv-text-color-3: rgb(118, 124, 130);
+    --sv-text-color-disabled: rgba(0, 0, 0, 0.24);
+    --sv-placeholder-color: rgba(0, 0, 0, 0.24);
+    --sv-placeholder-color-disabled: rgba(0, 0, 0, 0.18);
+    --sv-icon-color: rgba(0, 0, 0, 0.24);
+    --sv-icon-color-hover: rgba(0, 0, 0, 0.18);
+    --sv-icon-color-pressed: rgba(0, 0, 0, 0.1);
+    --sv-icon-color-disabled: rgba(0, 0, 0, 0.18);
+
+    /* ── 表面色 ──────────────────────────────────────── */
+    --sv-action-color: rgb(250, 250, 252);
+    --sv-hover-color: rgb(243, 243, 245);
+    --sv-pressed-color: rgb(237, 237, 239);
+    --sv-table-color: #ffffff;
+    --sv-table-header-color: rgb(250, 250, 252);
+    --sv-table-hover-color: rgba(0, 0, 100, 0.03);
+    --sv-table-striped-color: rgba(0, 0, 100, 0.02);
+    --sv-input-color: transparent;
+    --sv-input-color-disabled: rgb(250, 250, 252);
+    --sv-code-color: rgb(244, 244, 248);
+    --sv-tab-color: rgb(247, 247, 250);
+    --sv-tag-color: #eeeeee;
+    --sv-avatar-color: rgba(0, 0, 0, 0.2);
+
+    /* ── 边框 / 分割线 ──────────────────────────────── */
+    --sv-border-color: hsl(240, 11%, 89%);
+    --sv-divider-color: rgb(239, 239, 245);
+    --sv-close-color-hover: rgba(0, 0, 0, 0.09);
+    --sv-close-color-pressed: rgba(0, 0, 0, 0.13);
+    --sv-rail-color: rgb(219, 219, 223);
+
+    /* ── 按钮语义色 ──────────────────────────────────── */
+
+    /* Default 按钮 */
+    --sv-btn-color: transparent;
+    --sv-btn-color-hover: transparent;
+    --sv-btn-color-pressed: transparent;
+    --sv-btn-text-color: var(--sv-text-color-2);
+    --sv-btn-text-color-hover: var(--sv-primary-hover-solid);
+    --sv-btn-text-color-pressed: var(--sv-primary-pressed);
+    --sv-btn-text-color-disabled: var(--sv-text-color-2);
+    --sv-btn-border: 1px solid var(--sv-border-color);
+    --sv-btn-border-hover: 1px solid var(--sv-primary-hover-solid);
+    --sv-btn-border-pressed: 1px solid var(--sv-primary-pressed);
+    --sv-btn-border-disabled: 1px solid var(--sv-border-color);
+
+    /* Primary 按钮 */
+    --sv-btn-primary-color: var(--sv-primary-solid);
+    --sv-btn-primary-color-hover: var(--sv-primary-hover-solid);
+    --sv-btn-primary-color-pressed: var(--sv-primary-pressed-solid);
+    --sv-btn-primary-text-color: #ffffff;
+    --sv-btn-primary-text-color-hover: #ffffff;
+    --sv-btn-primary-text-color-pressed: #ffffff;
+    --sv-btn-primary-text-color-disabled: var(--sv-text-color-2);
+    --sv-btn-primary-border: 1px solid var(--sv-primary-solid);
+    --sv-btn-primary-border-hover: 1px solid var(--sv-primary-hover-solid);
+    --sv-btn-primary-border-pressed: 1px solid var(--sv-primary-pressed-solid);
+    --sv-btn-primary-border-disabled: 1px solid var(--sv-primary-solid);
+
+    /* Info 按钮 */
+    --sv-btn-info-color: var(--sv-info-solid);
+    --sv-btn-info-color-hover: var(--sv-info-hover-solid);
+    --sv-btn-info-color-pressed: var(--sv-info-pressed-solid);
+    --sv-btn-info-text-color: #ffffff;
+    --sv-btn-info-text-color-hover: #ffffff;
+    --sv-btn-info-text-color-pressed: #ffffff;
+    --sv-btn-info-text-color-disabled: var(--sv-text-color-2);
+    --sv-btn-info-border: 1px solid var(--sv-info-solid);
+    --sv-btn-info-border-hover: 1px solid var(--sv-info-hover-solid);
+    --sv-btn-info-border-pressed: 1px solid var(--sv-info-pressed-solid);
+    --sv-btn-info-border-disabled: 1px solid var(--sv-info-solid);
+
+    /* Success 按钮 */
+    --sv-btn-success-color: var(--sv-success-solid);
+    --sv-btn-success-color-hover: var(--sv-success-hover-solid);
+    --sv-btn-success-color-pressed: var(--sv-success-pressed-solid);
+    --sv-btn-success-text-color: #ffffff;
+    --sv-btn-success-text-color-hover: #ffffff;
+    --sv-btn-success-text-color-pressed: #ffffff;
+    --sv-btn-success-text-color-disabled: var(--sv-text-color-2);
+    --sv-btn-success-border: 1px solid var(--sv-success-solid);
+    --sv-btn-success-border-hover: 1px solid var(--sv-success-hover-solid);
+    --sv-btn-success-border-pressed: 1px solid var(--sv-success-pressed-solid);
+    --sv-btn-success-border-disabled: 1px solid var(--sv-success-solid);
+
+    /* Warning 按钮 */
+    --sv-btn-warning-color: var(--sv-warning-solid);
+    --sv-btn-warning-color-hover: var(--sv-warning-hover-solid);
+    --sv-btn-warning-color-pressed: var(--sv-warning-pressed-solid);
+    --sv-btn-warning-text-color: #ffffff;
+    --sv-btn-warning-text-color-hover: #ffffff;
+    --sv-btn-warning-text-color-pressed: #ffffff;
+    --sv-btn-warning-text-color-disabled: var(--sv-text-color-2);
+    --sv-btn-warning-border: 1px solid var(--sv-warning-solid);
+    --sv-btn-warning-border-hover: 1px solid var(--sv-warning-hover-solid);
+    --sv-btn-warning-border-pressed: 1px solid var(--sv-warning-pressed-solid);
+    --sv-btn-warning-border-disabled: 1px solid var(--sv-warning-solid);
+
+    /* Error 按钮 */
+    --sv-btn-error-color: var(--sv-error-solid);
+    --sv-btn-error-color-hover: var(--sv-error-hover-solid);
+    --sv-btn-error-color-pressed: var(--sv-error-pressed-solid);
+    --sv-btn-error-text-color: #ffffff;
+    --sv-btn-error-text-color-hover: #ffffff;
+    --sv-btn-error-text-color-pressed: #ffffff;
+    --sv-btn-error-text-color-disabled: var(--sv-text-color-2);
+    --sv-btn-error-border: 1px solid var(--sv-error-solid);
+    --sv-btn-error-border-hover: 1px solid var(--sv-error-hover-solid);
+    --sv-btn-error-border-pressed: 1px solid var(--sv-error-pressed-solid);
+    --sv-btn-error-border-disabled: 1px solid var(--sv-error-solid);
+
+    /* Secondary 按钮 — 无边框，text-color 所有状态不变 */
+    --sv-btn-secondary-color: rgba(46, 51, 56, 0.05);
+    --sv-btn-secondary-color-hover: rgba(46, 51, 56, 0.09);
+    --sv-btn-secondary-color-pressed: rgba(46, 51, 56, 0.13);
+    --sv-btn-secondary-text-color: rgb(51, 54, 57);
+    /* border: 无 */
+
+    /* Tertiary 按钮 — 无边框，text-color 所有状态不变，背景同 Secondary */
+    --sv-btn-tertiary-color: rgba(46, 51, 56, 0.05);
+    --sv-btn-tertiary-color-hover: rgba(46, 51, 56, 0.09);
+    --sv-btn-tertiary-color-pressed: rgba(46, 51, 56, 0.13);
+    --sv-btn-tertiary-text-color: rgb(118, 124, 130);
+    /* border: 无 */
+
+    /* Quaternary 按钮 — 纯文字，无背景无边框 */
+    --sv-btn-quaternary-text-color: rgb(51, 54, 57);
+    /* color: transparent, border: 无 */
+
+    /* ── Alert 语义色 ────────────────────────────────── */
+
+    /* Default Alert */
+    --sv-alert-color: var(--sv-action-color);
+    --sv-alert-border: 1px solid var(--sv-divider-color);
+    --sv-alert-title-text-color: var(--sv-text-color-1);
+    --sv-alert-icon-color: var(--sv-text-color-2);
+    --sv-alert-content-text-color: var(--sv-text-color-2);
+
+    /* Info Alert */
+    --sv-alert-info-color: rgba(32, 128, 240, 0.08);
+    --sv-alert-info-border: 1px solid rgba(32, 128, 240, 0.25);
+    --sv-alert-info-title-text-color: var(--sv-text-color-1);
+    --sv-alert-info-icon-color: var(--sv-info-solid);
+    --sv-alert-info-content-text-color: var(--sv-text-color-2);
+
+    /* Success Alert */
+    --sv-alert-success-color: rgba(24, 160, 88, 0.08);
+    --sv-alert-success-border: 1px solid rgba(24, 160, 88, 0.25);
+    --sv-alert-success-title-text-color: var(--sv-text-color-1);
+    --sv-alert-success-icon-color: var(--sv-success-solid);
+    --sv-alert-success-content-text-color: var(--sv-text-color-2);
+
+    /* Warning Alert */
+    --sv-alert-warning-color: rgba(240, 160, 32, 0.08);
+    --sv-alert-warning-border: 1px solid rgba(240, 160, 32, 0.33);
+    --sv-alert-warning-title-text-color: var(--sv-text-color-1);
+    --sv-alert-warning-icon-color: var(--sv-warning-solid);
+    --sv-alert-warning-content-text-color: var(--sv-text-color-2);
+
+    /* Error Alert */
+    --sv-alert-error-color: rgba(208, 48, 80, 0.08);
+    --sv-alert-error-border: 1px solid rgba(208, 48, 80, 0.25);
+    --sv-alert-error-title-text-color: var(--sv-text-color-1);
+    --sv-alert-error-icon-color: var(--sv-error-solid);
+    --sv-alert-error-content-text-color: var(--sv-text-color-2);
+
+    /* ── 透明度 Token ────────────────────────────────── */
+    --sv-opacity-1: 0.82;
+    --sv-opacity-2: 0.72;
+    --sv-opacity-3: 0.38;
+    --sv-opacity-4: 0.24;
+    --sv-opacity-5: 0.18;
+    --sv-opacity-disabled: 0.5;
+    --sv-opacity-close: 0.6;
+
+    /* ── 阴影 ────────────────────────────────────────── */
+    --sv-box-shadow-1:
+        0 1px 2px -2px rgba(0, 0, 0, 0.08), 0 3px 6px 0 rgba(0, 0, 0, 0.06), 0 5px 12px 4px rgba(0, 0, 0, 0.04);
+    --sv-box-shadow-2:
+        0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+    --sv-box-shadow-3:
+        0 6px 16px -9px rgba(0, 0, 0, 0.08), 0 9px 28px 0 rgba(0, 0, 0, 0.05), 0 12px 48px 16px rgba(0, 0, 0, 0.03);
+
+    /* ── 滚动条 ──────────────────────────────────────── */
+    --sv-scrollbar-color: rgba(0, 0, 0, 0.25);
+    --sv-scrollbar-color-hover: rgba(0, 0, 0, 0.4);
+    --sv-scrollbar-width: 5px;
+    --sv-scrollbar-height: 5px;
+    --sv-scrollbar-radius: 5px;
+}
+
+/* ================================================================
+ *  暗色主题（Dark）
+ * ================================================================ */
+html[data-theme='dark'] {
+    /* ── 基础语义色（4 状态） ──────────────────────────── */
+
+    /* Primary */
+    --sv-primary: 123 156 245; /* base   提亮 */
+    --sv-primary-solid: #7b9cf5;
+    --sv-primary-hover: 146 176 247; /* hover  L+6% */
+    --sv-primary-hover-solid: #92b0f7;
+    --sv-primary-pressed: 101 136 239; /* pressed L-6% */
+    --sv-primary-suppl: 40 73 184; /* suppl  独立暗色 */
+
+    /* Info */
+    --sv-info: 112 192 232;
+    --sv-info-solid: #70c0e8;
+    --sv-info-hover: 138 203 236;
+    --sv-info-pressed: 102 175 211;
+    --sv-info-suppl: 56 137 197;
+
+    /* Success */
+    --sv-success: 99 226 183;
+    --sv-success-solid: #63e2b7;
+    --sv-success-hover: 127 231 196;
+    --sv-success-pressed: 90 206 167;
+    --sv-success-suppl: 42 148 125;
+
+    /* Warning */
+    --sv-warning: 242 201 125;
+    --sv-warning-solid: #f2c97d;
+    --sv-warning-hover: 245 213 153;
+    --sv-warning-hover-solid: #f5d599;
+    --sv-warning-pressed: 230 194 96;
+    --sv-warning-suppl: 240 138 0;
+
+    /* Error */
+    --sv-error: 232 128 128;
+    --sv-error-solid: #e88080;
+    --sv-error-hover: 233 139 139;
+    --sv-error-hover-solid: #f28b8b;
+    --sv-error-pressed: 229 114 114;
+    --sv-error-suppl: 208 58 82;
+
+    /* ── 中性色 ──────────────────────────────────────── */
+    --sv-base-color: #0d0e12;
+    --sv-body-color: #12131a;
+    --sv-card-color: #1a1b24;
+    --sv-modal-color: #22232e;
+    --sv-popover-color: #2a2b38;
+    --sv-inverted-color: #f0f1f5;
+    --sv-modal-mask-color: rgba(0, 0, 0, 0.6);
+
+    /* ── 文字色 ──────────────────────────────────────── */
+    --sv-text-color-1: rgba(255, 255, 255, 0.9);
+    --sv-text-color-2: rgba(255, 255, 255, 0.82);
+    --sv-text-color-3: rgba(255, 255, 255, 0.52);
+    --sv-text-color-disabled: rgba(255, 255, 255, 0.38);
+    --sv-placeholder-color: rgba(255, 255, 255, 0.38);
+    --sv-placeholder-color-disabled: rgba(255, 255, 255, 0.28);
+    --sv-icon-color: rgba(255, 255, 255, 0.38);
+    --sv-icon-color-hover: rgba(255, 255, 255, 0.475);
+    --sv-icon-color-pressed: rgba(255, 255, 255, 0.304);
+    --sv-icon-color-disabled: rgba(255, 255, 255, 0.28);
+
+    /* ── 表面色 ──────────────────────────────────────── */
+    --sv-action-color: rgba(255, 255, 255, 0.06);
+    --sv-hover-color: rgba(255, 255, 255, 0.09);
+    --sv-pressed-color: rgba(255, 255, 255, 0.05);
+    --sv-table-color: rgb(24, 24, 28);
+    --sv-table-header-color: rgba(255, 255, 255, 0.06);
+    --sv-table-hover-color: rgba(255, 255, 255, 0.06);
+    --sv-table-striped-color: rgba(255, 255, 255, 0.05);
+    --sv-input-color: rgba(255, 255, 255, 0.1);
+    --sv-input-color-disabled: rgba(255, 255, 255, 0.06);
+    --sv-code-color: rgba(255, 255, 255, 0.12);
+    --sv-tab-color: rgba(255, 255, 255, 0.04);
+    --sv-tag-color: rgba(255, 255, 255, 0.2);
+    --sv-avatar-color: rgba(255, 255, 255, 0.18);
+
+    /* ── 边框 / 分割线 ──────────────────────────────── */
+    --sv-border-color: rgba(255, 255, 255, 0.24);
+    --sv-divider-color: rgba(255, 255, 255, 0.09);
+    --sv-close-color-hover: rgba(255, 255, 255, 0.12);
+    --sv-close-color-pressed: rgba(255, 255, 255, 0.08);
+    --sv-rail-color: rgba(255, 255, 255, 0.2);
+
+    /* ── 按钮语义色 ──────────────────────────────────── */
+
+    /* Default 按钮 */
+    --sv-btn-color: transparent;
+    --sv-btn-color-hover: transparent;
+    --sv-btn-color-pressed: transparent;
+    --sv-btn-text-color: var(--sv-text-color-2);
+    --sv-btn-text-color-hover: var(--sv-primary-hover-solid);
+    --sv-btn-text-color-pressed: var(--sv-primary-pressed);
+    --sv-btn-text-color-disabled: var(--sv-text-color-2);
+    --sv-btn-border: 1px solid var(--sv-border-color);
+    --sv-btn-border-hover: 1px solid var(--sv-primary-hover-solid);
+    --sv-btn-border-pressed: 1px solid var(--sv-primary-pressed);
+    --sv-btn-border-disabled: 1px solid var(--sv-border-color);
+
+    /* Primary 按钮 */
+    --sv-btn-primary-color: var(--sv-primary-solid);
+    --sv-btn-primary-color-hover: var(--sv-primary-hover-solid);
+    --sv-btn-primary-color-pressed: var(--sv-primary-pressed);
+    --sv-btn-primary-text-color: #ffffff;
+    --sv-btn-primary-text-color-hover: #ffffff;
+    --sv-btn-primary-text-color-pressed: #ffffff;
+    --sv-btn-primary-text-color-disabled: var(--sv-text-color-2);
+    --sv-btn-primary-border: 1px solid var(--sv-primary-solid);
+    --sv-btn-primary-border-hover: 1px solid var(--sv-primary-hover-solid);
+    --sv-btn-primary-border-pressed: 1px solid var(--sv-primary-pressed);
+    --sv-btn-primary-border-disabled: 1px solid var(--sv-primary-solid);
+
+    /* Info 按钮 */
+    --sv-btn-info-color: var(--sv-info-solid);
+    --sv-btn-info-color-hover: var(--sv-info-hover);
+    --sv-btn-info-color-pressed: var(--sv-info-pressed);
+    --sv-btn-info-text-color: #ffffff;
+    --sv-btn-info-text-color-hover: #ffffff;
+    --sv-btn-info-text-color-pressed: #ffffff;
+    --sv-btn-info-text-color-disabled: var(--sv-text-color-2);
+    --sv-btn-info-border: 1px solid var(--sv-info-solid);
+    --sv-btn-info-border-hover: 1px solid var(--sv-info-hover);
+    --sv-btn-info-border-pressed: 1px solid var(--sv-info-pressed);
+    --sv-btn-info-border-disabled: 1px solid var(--sv-info-solid);
+
+    /* Success 按钮 */
+    --sv-btn-success-color: var(--sv-success-solid);
+    --sv-btn-success-color-hover: var(--sv-success-hover);
+    --sv-btn-success-color-pressed: var(--sv-success-pressed);
+    --sv-btn-success-text-color: #ffffff;
+    --sv-btn-success-text-color-hover: #ffffff;
+    --sv-btn-success-text-color-pressed: #ffffff;
+    --sv-btn-success-text-color-disabled: var(--sv-text-color-2);
+    --sv-btn-success-border: 1px solid var(--sv-success-solid);
+    --sv-btn-success-border-hover: 1px solid var(--sv-success-hover);
+    --sv-btn-success-border-pressed: 1px solid var(--sv-success-pressed);
+    --sv-btn-success-border-disabled: 1px solid var(--sv-success-solid);
+
+    /* Warning 按钮 */
+    --sv-btn-warning-color: var(--sv-warning-solid);
+    --sv-btn-warning-color-hover: var(--sv-warning-hover-solid);
+    --sv-btn-warning-color-pressed: var(--sv-warning-pressed);
+    --sv-btn-warning-text-color: #ffffff;
+    --sv-btn-warning-text-color-hover: #ffffff;
+    --sv-btn-warning-text-color-pressed: #ffffff;
+    --sv-btn-warning-text-color-disabled: var(--sv-text-color-2);
+    --sv-btn-warning-border: 1px solid var(--sv-warning-solid);
+    --sv-btn-warning-border-hover: 1px solid var(--sv-warning-hover-solid);
+    --sv-btn-warning-border-pressed: 1px solid var(--sv-warning-pressed);
+    --sv-btn-warning-border-disabled: 1px solid var(--sv-warning-solid);
+
+    /* Error 按钮 */
+    --sv-btn-error-color: var(--sv-error-solid);
+    --sv-btn-error-color-hover: var(--sv-error-hover-solid);
+    --sv-btn-error-color-pressed: var(--sv-error-pressed);
+    --sv-btn-error-text-color: #ffffff;
+    --sv-btn-error-text-color-hover: #ffffff;
+    --sv-btn-error-text-color-pressed: #ffffff;
+    --sv-btn-error-text-color-disabled: var(--sv-text-color-2);
+    --sv-btn-error-border: 1px solid var(--sv-error-solid);
+    --sv-btn-error-border-hover: 1px solid var(--sv-error-hover-solid);
+    --sv-btn-error-border-pressed: 1px solid var(--sv-error-pressed);
+    --sv-btn-error-border-disabled: 1px solid var(--sv-error-solid);
+
+    /* Secondary 按钮 — 无边框，text-color 所有状态不变 */
+    --sv-btn-secondary-color: rgba(255, 255, 255, 0.08);
+    --sv-btn-secondary-color-hover: rgba(255, 255, 255, 0.12);
+    --sv-btn-secondary-color-pressed: rgba(255, 255, 255, 0.08);
+    --sv-btn-secondary-text-color: rgba(255, 255, 255, 0.82);
+    /* border: 无 */
+
+    /* Tertiary 按钮 — 无边框，text-color 所有状态不变，背景同 Secondary */
+    --sv-btn-tertiary-color: rgba(255, 255, 255, 0.08);
+    --sv-btn-tertiary-color-hover: rgba(255, 255, 255, 0.12);
+    --sv-btn-tertiary-color-pressed: rgba(255, 255, 255, 0.08);
+    --sv-btn-tertiary-text-color: rgba(255, 255, 255, 0.52);
+    /* border: 无 */
+
+    /* Quaternary 按钮 — 纯文字，无背景无边框 */
+    --sv-btn-quaternary-text-color: rgba(255, 255, 255, 0.82);
+    /* color: transparent, border: 无 */
+
+    /* ── Alert 语义色 ────────────────────────────────── */
+
+    /* Default Alert */
+    --sv-alert-color: var(--sv-action-color);
+    --sv-alert-border: 1px solid var(--sv-divider-color);
+    --sv-alert-title-text-color: var(--sv-text-color-1);
+    --sv-alert-icon-color: var(--sv-text-color-2);
+    --sv-alert-content-text-color: var(--sv-text-color-2);
+
+    /* Info Alert */
+    --sv-alert-info-color: rgba(112, 192, 232, 0.08);
+    --sv-alert-info-border: 1px solid rgba(112, 192, 232, 0.25);
+    --sv-alert-info-title-text-color: var(--sv-text-color-1);
+    --sv-alert-info-icon-color: var(--sv-info);
+    --sv-alert-info-content-text-color: var(--sv-text-color-2);
+
+    /* Success Alert */
+    --sv-alert-success-color: rgba(99, 226, 183, 0.08);
+    --sv-alert-success-border: 1px solid rgba(99, 226, 183, 0.25);
+    --sv-alert-success-title-text-color: var(--sv-text-color-1);
+    --sv-alert-success-icon-color: var(--sv-success);
+    --sv-alert-success-content-text-color: var(--sv-text-color-2);
+
+    /* Warning Alert */
+    --sv-alert-warning-color: rgba(242, 201, 125, 0.08);
+    --sv-alert-warning-border: 1px solid rgba(242, 201, 125, 0.33);
+    --sv-alert-warning-title-text-color: var(--sv-text-color-1);
+    --sv-alert-warning-icon-color: var(--sv-warning);
+    --sv-alert-warning-content-text-color: var(--sv-text-color-2);
+
+    /* Error Alert */
+    --sv-alert-error-color: rgba(232, 128, 128, 0.08);
+    --sv-alert-error-border: 1px solid rgba(232, 128, 128, 0.25);
+    --sv-alert-error-title-text-color: var(--sv-text-color-1);
+    --sv-alert-error-icon-color: var(--sv-error);
+    --sv-alert-error-content-text-color: var(--sv-text-color-2);
+
+    /* ── 透明度 Token ────────────────────────────────── */
+    --sv-opacity-1: 0.9;
+    --sv-opacity-2: 0.82;
+    --sv-opacity-3: 0.52;
+    --sv-opacity-4: 0.38;
+    --sv-opacity-5: 0.28;
+    --sv-opacity-disabled: 0.38;
+    --sv-opacity-close: 0.52;
+
+    /* ── 阴影 ────────────────────────────────────────── */
+    --sv-box-shadow-1:
+        0 1px 2px -2px rgba(0, 0, 0, 0.24), 0 3px 6px 0 rgba(0, 0, 0, 0.18), 0 5px 12px 4px rgba(0, 0, 0, 0.12);
+    --sv-box-shadow-2:
+        0 3px 6px -4px rgba(0, 0, 0, 0.24), 0 6px 12px 0 rgba(0, 0, 0, 0.16), 0 9px 18px 8px rgba(0, 0, 0, 0.1);
+    --sv-box-shadow-3:
+        0 6px 16px -9px rgba(0, 0, 0, 0.08), 0 9px 28px 0 rgba(0, 0, 0, 0.05), 0 12px 48px 16px rgba(0, 0, 0, 0.03);
+
+    /* ── 滚动条 ──────────────────────────────────────── */
+    --sv-scrollbar-color: rgba(255, 255, 255, 0.2);
+    --sv-scrollbar-color-hover: rgba(255, 255, 255, 0.3);
+}

@@ -1,0 +1,120 @@
+@import url('reset.css');
+@import url('color-tokens.css');
+@import url('github-markdown.css');
+@import url('./elements/index.css');
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.animate-spin {
+    animation: spin 2s linear infinite;
+}
+
+@keyframes pulse {
+    0%,
+    100% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 0.8;
+    }
+}
+
+.animate-pulse {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+/* ================================================================
+ *  全局基础样式
+ * ================================================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:
+        -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    background-color: var(--sv-base-color);
+    font-size: 13px;
+    color: var(--sv-text-color-2);
+    line-height: 1.5;
+    overflow: hidden;
+    user-select: none;
+}
+
+/* 滚动条 */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--sv-border-color);
+    border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--sv-placeholder-color);
+}
+
+/* 原生控件适配主题 */
+input,
+select,
+textarea {
+    color-scheme: dark;
+}
+html:not(.dark) input,
+html:not(.dark) select,
+html:not(.dark) textarea {
+    color-scheme: light;
+}
+
+:root {
+    /* ---- 排版 ---- */
+    --sv-font-sans:
+        -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans SC', sans-serif,
+        'Apple Color Emoji', 'Segoe UI Emoji';
+    --sv-font-mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', Consolas, 'Courier New', monospace;
+    --sv-font-size-xs: 11px;
+    --sv-font-size-sm: 12px;
+    --sv-font-size-base: 13px;
+    --sv-font-size-md: 14px;
+    --sv-font-size-lg: 16px;
+    --sv-font-size-xl: 20px;
+    --sv-font-size-2xl: 24px;
+    --sv-font-size-3xl: 30px;
+    --sv-line-height: 1.5;
+    --sv-font-weight-normal: 400;
+    --sv-font-weight-medium: 500;
+    --sv-font-weight-semibold: 600;
+    --sv-font-weight-bold: 700;
+
+    /* ---- 间距（4px 基准） ---- */
+    --sv-space-0: 0;
+    --sv-space-1: 4px;
+    --sv-space-2: 8px;
+    --sv-space-3: 12px;
+    --sv-space-4: 16px;
+    --sv-space-5: 20px;
+    --sv-space-6: 24px;
+    --sv-space-8: 32px;
+    --sv-space-10: 40px;
+    --sv-space-12: 48px;
+    --sv-space-16: 64px;
+
+    /* ---- 圆角 ---- */
+    --sv-radius-none: 0;
+    --sv-radius-sm: 2px;
+    --sv-radius-base: 4px;
+    --sv-radius-md: 6px;
+    --sv-radius-lg: 8px;
+}

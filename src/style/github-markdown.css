@@ -1,0 +1,2297 @@
+/*light */
+html .markdown-body {
+    color-scheme: light;
+    /** CSS default easing. Use for hover state changes and micro-interactions. */
+    /** Accelerating motion. Use for elements exiting the viewport (moving off-screen). */
+    /** Smooth acceleration and deceleration. Use for elements moving or morphing within the viewport. */
+    /** Decelerating motion. Use for elements entering the viewport or appearing on screen. */
+    /** Constant motion with no acceleration. Use for continuous animations like progress bars or loaders. */
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    margin: 0;
+    font-weight: 400;
+    color: #1f2328;
+    background-color: #ffffff;
+    font-family:
+        -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+        'Segoe UI Emoji';
+    font-size: 16px;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+
+html .markdown-body a {
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+}
+
+html .markdown-body .octicon {
+    display: inline-block;
+    fill: currentColor;
+    vertical-align: text-bottom;
+}
+
+html .markdown-body h1:hover .anchor .octicon-link:before,
+html .markdown-body h2:hover .anchor .octicon-link:before,
+html .markdown-body h3:hover .anchor .octicon-link:before,
+html .markdown-body h4:hover .anchor .octicon-link:before,
+html .markdown-body h5:hover .anchor .octicon-link:before,
+html .markdown-body h6:hover .anchor .octicon-link:before {
+    width: 16px;
+    height: 16px;
+    content: ' ';
+    display: inline-block;
+    background-color: currentColor;
+    -webkit-mask-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' aria-hidden='true'><path fill-rule='evenodd' d='M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z'></path></svg>");
+    mask-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' aria-hidden='true'><path fill-rule='evenodd' d='M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z'></path></svg>");
+}
+
+html .markdown-body details,
+html .markdown-body figcaption,
+html .markdown-body figure {
+    display: block;
+}
+
+html .markdown-body summary {
+    display: list-item;
+}
+
+html .markdown-body [hidden] {
+    display: none !important;
+}
+
+html .markdown-body a {
+    background-color: rgba(0, 0, 0, 0);
+    color: #0969da;
+    text-decoration: none;
+}
+
+html .markdown-body abbr[title] {
+    border-bottom: none;
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted;
+}
+
+html .markdown-body b,
+html .markdown-body strong {
+    font-weight: 600;
+}
+
+html .markdown-body dfn {
+    font-style: italic;
+}
+
+html .markdown-body h1 {
+    margin: 0.67em 0;
+    font-weight: 600;
+    padding-bottom: 0.3em;
+    font-size: 2em;
+    border-bottom: 1px solid #d1d9e0b3;
+}
+
+html .markdown-body mark {
+    background-color: #fff8c5;
+    color: #1f2328;
+}
+
+html .markdown-body small {
+    font-size: 90%;
+}
+
+html .markdown-body sub,
+html .markdown-body sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+html .markdown-body sub {
+    bottom: -0.25em;
+}
+
+html .markdown-body sup {
+    top: -0.5em;
+}
+
+html .markdown-body img {
+    border-style: none;
+    max-width: 100%;
+    box-sizing: content-box;
+}
+
+html .markdown-body code,
+html .markdown-body kbd,
+html .markdown-body pre,
+html .markdown-body samp {
+    font-family: monospace;
+    font-size: 1em;
+}
+
+html .markdown-body figure {
+    margin: 1em 2.5rem;
+}
+
+html .markdown-body hr {
+    box-sizing: content-box;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0);
+    border-bottom: 1px solid #d1d9e0b3;
+    height: 0.25em;
+    padding: 0;
+    margin: 1.5rem 0;
+    background-color: #d1d9e0;
+    border: 0;
+}
+
+html .markdown-body input {
+    font: inherit;
+    margin: 0;
+    overflow: visible;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+html .markdown-body [type='button'],
+html .markdown-body [type='reset'],
+html .markdown-body [type='submit'] {
+    -webkit-appearance: button;
+    appearance: button;
+}
+
+html .markdown-body [type='checkbox'],
+html .markdown-body [type='radio'] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+html .markdown-body [type='number']::-webkit-inner-spin-button,
+html .markdown-body [type='number']::-webkit-outer-spin-button {
+    height: auto;
+}
+
+html .markdown-body [type='search']::-webkit-search-cancel-button,
+html .markdown-body [type='search']::-webkit-search-decoration {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+html .markdown-body ::-webkit-input-placeholder {
+    color: inherit;
+    opacity: 0.54;
+}
+
+html .markdown-body ::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    appearance: button;
+    font: inherit;
+}
+
+html .markdown-body a:hover {
+    text-decoration: underline;
+}
+
+html .markdown-body ::placeholder {
+    color: #59636e;
+    opacity: 1;
+}
+
+html .markdown-body hr::before {
+    display: table;
+    content: '';
+}
+
+html .markdown-body hr::after {
+    display: table;
+    clear: both;
+    content: '';
+}
+
+html .markdown-body table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    display: block;
+    width: max-content;
+    max-width: 100%;
+    overflow: auto;
+    font-variant: tabular-nums;
+}
+
+html .markdown-body td,
+html .markdown-body th {
+    padding: 0;
+}
+
+html .markdown-body details summary {
+    cursor: pointer;
+}
+
+html .markdown-body a:focus,
+html .markdown-body [role='button']:focus,
+html .markdown-body input[type='radio']:focus,
+html .markdown-body input[type='checkbox']:focus {
+    outline: 2px solid var(--borderColor-accent-emphasis);
+    outline-offset: -2px;
+    box-shadow: none;
+}
+
+html .markdown-body a:focus:not(:focus-visible),
+html .markdown-body [role='button']:focus:not(:focus-visible),
+html .markdown-body input[type='radio']:focus:not(:focus-visible),
+html .markdown-body input[type='checkbox']:focus:not(:focus-visible) {
+    outline: solid 1px rgba(0, 0, 0, 0);
+}
+
+html .markdown-body a:focus-visible,
+html .markdown-body [role='button']:focus-visible,
+html .markdown-body input[type='radio']:focus-visible,
+html .markdown-body input[type='checkbox']:focus-visible {
+    outline: 2px solid var(--borderColor-accent-emphasis);
+    outline-offset: -2px;
+    box-shadow: none;
+}
+
+html .markdown-body a:not([class]):focus,
+html .markdown-body a:not([class]):focus-visible,
+html .markdown-body input[type='radio']:focus,
+html .markdown-body input[type='radio']:focus-visible,
+html .markdown-body input[type='checkbox']:focus,
+html .markdown-body input[type='checkbox']:focus-visible {
+    outline-offset: 0;
+}
+
+html .markdown-body kbd {
+    display: inline-block;
+    padding: 0.25rem;
+    font:
+        11px ui-monospace,
+        SFMono-Regular,
+        SF Mono,
+        Menlo,
+        Consolas,
+        Liberation Mono,
+        monospace;
+    line-height: 10px;
+    color: #1f2328;
+    vertical-align: middle;
+    background-color: #f6f8fa;
+    border: solid 1px var(--borderColor-muted);
+    border-bottom-color: var(--borderColor-muted);
+    border-radius: 6px;
+    box-shadow: inset 0 -1px 0 var(--borderColor-muted);
+}
+
+html .markdown-body h1,
+html .markdown-body h2,
+html .markdown-body h3,
+html .markdown-body h4,
+html .markdown-body h5,
+html .markdown-body h6 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+html .markdown-body h2 {
+    font-weight: 600;
+    padding-bottom: 0.3em;
+    font-size: 1.5em;
+    border-bottom: 1px solid #d1d9e0b3;
+}
+
+html .markdown-body h3 {
+    font-weight: 600;
+    font-size: 1.25em;
+}
+
+html .markdown-body h4 {
+    font-weight: 600;
+    font-size: 1em;
+}
+
+html .markdown-body h5 {
+    font-weight: 600;
+    font-size: 0.875em;
+}
+
+html .markdown-body h6 {
+    font-weight: 600;
+    font-size: 0.85em;
+    color: #59636e;
+}
+
+html .markdown-body p {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+html .markdown-body blockquote {
+    margin: 0;
+    padding: 0 1em;
+    color: #59636e;
+    border-left: 0.25em solid #d1d9e0;
+}
+
+html .markdown-body ul,
+html .markdown-body ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 2em;
+}
+
+html .markdown-body ol ol,
+html .markdown-body ul ol {
+    list-style-type: lower-roman;
+}
+
+html .markdown-body ul ul ol,
+html .markdown-body ul ol ol,
+html .markdown-body ol ul ol,
+html .markdown-body ol ol ol {
+    list-style-type: lower-alpha;
+}
+
+html .markdown-body dd {
+    margin-left: 0;
+}
+
+html .markdown-body tt,
+html .markdown-body code,
+html .markdown-body samp {
+    font-family:
+        ui-monospace,
+        SFMono-Regular,
+        SF Mono,
+        Menlo,
+        Consolas,
+        Liberation Mono,
+        monospace;
+    font-size: 12px;
+}
+
+html .markdown-body pre {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family:
+        ui-monospace,
+        SFMono-Regular,
+        SF Mono,
+        Menlo,
+        Consolas,
+        Liberation Mono,
+        monospace;
+    font-size: 12px;
+    word-wrap: normal;
+}
+
+html .markdown-body .octicon {
+    display: inline-block;
+    overflow: visible !important;
+    vertical-align: text-bottom;
+    fill: currentColor;
+}
+
+html .markdown-body input::-webkit-outer-spin-button,
+html .markdown-body input::-webkit-inner-spin-button {
+    margin: 0;
+    appearance: none;
+}
+
+html .markdown-body .mr-2 {
+    margin-right: 0.5rem !important;
+}
+
+.markdown-body::before {
+    display: table;
+    content: '';
+}
+
+.markdown-body::after {
+    display: table;
+    clear: both;
+    content: '';
+}
+
+html .markdown-body > *:first-child {
+    margin-top: 0 !important;
+}
+
+html .markdown-body > *:last-child {
+    margin-bottom: 0 !important;
+}
+
+html .markdown-body a:not([href]) {
+    color: inherit;
+    text-decoration: none;
+}
+
+html .markdown-body .absent {
+    color: #d1242f;
+}
+
+html .markdown-body .anchor {
+    float: left;
+    padding-right: 0.25rem;
+    margin-left: -20px;
+    line-height: 1;
+}
+
+html .markdown-body .anchor:focus {
+    outline: none;
+}
+
+html .markdown-body p,
+html .markdown-body blockquote,
+html .markdown-body ul,
+html .markdown-body ol,
+html .markdown-body dl,
+html .markdown-body table,
+html .markdown-body pre,
+html .markdown-body details {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+html .markdown-body blockquote > :first-child {
+    margin-top: 0;
+}
+
+html .markdown-body blockquote > :last-child {
+    margin-bottom: 0;
+}
+
+html .markdown-body h1 .octicon-link,
+html .markdown-body h2 .octicon-link,
+html .markdown-body h3 .octicon-link,
+html .markdown-body h4 .octicon-link,
+html .markdown-body h5 .octicon-link,
+html .markdown-body h6 .octicon-link {
+    color: #1f2328;
+    vertical-align: middle;
+    visibility: hidden;
+}
+
+html .markdown-body h1:hover .anchor,
+html .markdown-body h2:hover .anchor,
+html .markdown-body h3:hover .anchor,
+html .markdown-body h4:hover .anchor,
+html .markdown-body h5:hover .anchor,
+html .markdown-body h6:hover .anchor {
+    text-decoration: none;
+}
+
+html .markdown-body h1:hover .anchor .octicon-link,
+html .markdown-body h2:hover .anchor .octicon-link,
+html .markdown-body h3:hover .anchor .octicon-link,
+html .markdown-body h4:hover .anchor .octicon-link,
+html .markdown-body h5:hover .anchor .octicon-link,
+html .markdown-body h6:hover .anchor .octicon-link {
+    visibility: visible;
+}
+
+html .markdown-body h1 tt,
+html .markdown-body h1 code,
+html .markdown-body h2 tt,
+html .markdown-body h2 code,
+html .markdown-body h3 tt,
+html .markdown-body h3 code,
+html .markdown-body h4 tt,
+html .markdown-body h4 code,
+html .markdown-body h5 tt,
+html .markdown-body h5 code,
+html .markdown-body h6 tt,
+html .markdown-body h6 code {
+    padding: 0 0.2em;
+    font-size: inherit;
+}
+
+html .markdown-body summary h1,
+html .markdown-body summary h2,
+html .markdown-body summary h3,
+html .markdown-body summary h4,
+html .markdown-body summary h5,
+html .markdown-body summary h6 {
+    display: inline-block;
+}
+
+html .markdown-body summary h1 .anchor,
+html .markdown-body summary h2 .anchor,
+html .markdown-body summary h3 .anchor,
+html .markdown-body summary h4 .anchor,
+html .markdown-body summary h5 .anchor,
+html .markdown-body summary h6 .anchor {
+    margin-left: -40px;
+}
+
+html .markdown-body summary h1,
+html .markdown-body summary h2 {
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+html .markdown-body ul.no-list,
+html .markdown-body ol.no-list {
+    padding: 0;
+    list-style-type: none;
+}
+
+html .markdown-body ol[type='a s'] {
+    list-style-type: lower-alpha;
+}
+
+html .markdown-body ol[type='A s'] {
+    list-style-type: upper-alpha;
+}
+
+html .markdown-body ol[type='i s'] {
+    list-style-type: lower-roman;
+}
+
+html .markdown-body ol[type='I s'] {
+    list-style-type: upper-roman;
+}
+
+html .markdown-body ol[type='1'] {
+    list-style-type: decimal;
+}
+
+html .markdown-body div > ol:not([type]) {
+    list-style-type: decimal;
+}
+
+html .markdown-body ul ul,
+html .markdown-body ul ol,
+html .markdown-body ol ol,
+html .markdown-body ol ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+html .markdown-body li > p {
+    margin-top: 1rem;
+}
+
+html .markdown-body li + li {
+    margin-top: 0.25em;
+}
+
+html .markdown-body dl {
+    padding: 0;
+}
+
+html .markdown-body dl dt {
+    padding: 0;
+    margin-top: 1rem;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: 600;
+}
+
+html .markdown-body dl dd {
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}
+
+html .markdown-body table th {
+    font-weight: 600;
+}
+
+html .markdown-body table th,
+html .markdown-body table td {
+    padding: 6px 13px;
+    border: 1px solid #d1d9e0;
+}
+
+html .markdown-body table td > :last-child {
+    margin-bottom: 0;
+}
+
+html .markdown-body table tr {
+    background-color: #ffffff;
+    border-top: 1px solid #d1d9e0b3;
+}
+
+html .markdown-body table tr:nth-child(2n) {
+    background-color: #f6f8fa;
+}
+
+html .markdown-body table img {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+html .markdown-body img[align='right'] {
+    padding-left: 20px;
+}
+
+html .markdown-body img[align='left'] {
+    padding-right: 20px;
+}
+
+html .markdown-body .emoji {
+    max-width: none;
+    vertical-align: text-top;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+html .markdown-body span.frame {
+    display: block;
+    overflow: hidden;
+}
+
+html .markdown-body span.frame > span {
+    display: block;
+    float: left;
+    width: auto;
+    padding: 7px;
+    margin: 13px 0 0;
+    overflow: hidden;
+    border: 1px solid #d1d9e0;
+}
+
+html .markdown-body span.frame span img {
+    display: block;
+    float: left;
+}
+
+html .markdown-body span.frame span span {
+    display: block;
+    padding: 5px 0 0;
+    clear: both;
+    color: #1f2328;
+}
+
+html .markdown-body span.align-center {
+    display: block;
+    overflow: hidden;
+    clear: both;
+}
+
+html .markdown-body span.align-center > span {
+    display: block;
+    margin: 13px auto 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+html .markdown-body span.align-center span img {
+    margin: 0 auto;
+    text-align: center;
+}
+
+html .markdown-body span.align-right {
+    display: block;
+    overflow: hidden;
+    clear: both;
+}
+
+html .markdown-body span.align-right > span {
+    display: block;
+    margin: 13px 0 0;
+    overflow: hidden;
+    text-align: right;
+}
+
+html .markdown-body span.align-right span img {
+    margin: 0;
+    text-align: right;
+}
+
+html .markdown-body span.float-left {
+    display: block;
+    float: left;
+    margin-right: 13px;
+    overflow: hidden;
+}
+
+html .markdown-body span.float-left span {
+    margin: 13px 0 0;
+}
+
+html .markdown-body span.float-right {
+    display: block;
+    float: right;
+    margin-left: 13px;
+    overflow: hidden;
+}
+
+html .markdown-body span.float-right > span {
+    display: block;
+    margin: 13px auto 0;
+    overflow: hidden;
+    text-align: right;
+}
+
+html .markdown-body code,
+html .markdown-body tt {
+    padding: 0.2em 0.4em;
+    margin: 0;
+    font-size: 85%;
+    white-space: break-spaces;
+    background-color: #818b981f;
+    border-radius: 6px;
+}
+
+html .markdown-body code br,
+html .markdown-body tt br {
+    display: none;
+}
+
+html .markdown-body del code {
+    text-decoration: inherit;
+}
+
+html .markdown-body samp {
+    font-size: 85%;
+}
+
+html .markdown-body pre code {
+    font-size: 100%;
+}
+
+html .markdown-body pre > code {
+    padding: 0;
+    margin: 0;
+    word-break: normal;
+    white-space: pre;
+    background: rgba(0, 0, 0, 0);
+    border: 0;
+}
+
+html .markdown-body .highlight {
+    margin-bottom: 1rem;
+}
+
+html .markdown-body .highlight pre {
+    margin-bottom: 0;
+    word-break: normal;
+}
+
+html .markdown-body .highlight pre,
+html .markdown-body pre {
+    padding: 1rem;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    color: #1f2328;
+    background-color: #f6f8fa;
+    border-radius: 6px;
+}
+
+html .markdown-body pre code,
+html .markdown-body pre tt {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    line-height: inherit;
+    word-wrap: normal;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+}
+
+html .markdown-body .csv-data td,
+html .markdown-body .csv-data th {
+    padding: 5px;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 1;
+    text-align: left;
+    white-space: nowrap;
+}
+
+html .markdown-body .csv-data .blob-num {
+    padding: 10px 0.5rem 9px;
+    text-align: right;
+    background: #ffffff;
+    border: 0;
+}
+
+html .markdown-body .csv-data tr {
+    border-top: 0;
+}
+
+html .markdown-body .csv-data th {
+    font-weight: 600;
+    background: #f6f8fa;
+    border-top: 0;
+}
+
+html .markdown-body [data-footnote-ref]::before {
+    content: '[';
+}
+
+html .markdown-body [data-footnote-ref]::after {
+    content: ']';
+}
+
+html .markdown-body .footnotes {
+    font-size: 12px;
+    color: #59636e;
+    border-top: 1px solid #d1d9e0;
+}
+
+html .markdown-body .footnotes ol {
+    padding-left: 1rem;
+}
+
+html .markdown-body .footnotes ol ul {
+    display: inline-block;
+    padding-left: 1rem;
+    margin-top: 1rem;
+}
+
+html .markdown-body .footnotes li {
+    position: relative;
+}
+
+html .markdown-body .footnotes li:target::before {
+    position: absolute;
+    top: calc(0.5rem * -1);
+    right: calc(0.5rem * -1);
+    bottom: calc(0.5rem * -1);
+    left: calc(1.5rem * -1);
+    pointer-events: none;
+    content: '';
+    border: 2px solid #0969da;
+    border-radius: 6px;
+}
+
+html .markdown-body .footnotes li:target {
+    color: #1f2328;
+}
+
+html .markdown-body .footnotes .data-footnote-backref g-emoji {
+    font-family: monospace;
+}
+
+html .markdown-body .pl-c {
+    color: #59636e;
+}
+
+html .markdown-body .pl-c1,
+html .markdown-body .pl-s .pl-v {
+    color: #0550ae;
+}
+
+html .markdown-body .pl-e,
+html .markdown-body .pl-en {
+    color: #6639ba;
+}
+
+html .markdown-body .pl-smi,
+html .markdown-body .pl-s .pl-s1 {
+    color: #1f2328;
+}
+
+html .markdown-body .pl-ent {
+    color: #0550ae;
+}
+
+html .markdown-body .pl-k {
+    color: #cf222e;
+}
+
+html .markdown-body .pl-s,
+html .markdown-body .pl-pds,
+html .markdown-body .pl-s .pl-pse .pl-s1,
+html .markdown-body .pl-sr,
+html .markdown-body .pl-sr .pl-cce,
+html .markdown-body .pl-sr .pl-sre,
+html .markdown-body .pl-sr .pl-sra {
+    color: #0a3069;
+}
+
+html .markdown-body .pl-v,
+html .markdown-body .pl-smw {
+    color: #953800;
+}
+
+html .markdown-body .pl-bu {
+    color: #82071e;
+}
+
+html .markdown-body .pl-ii {
+    color: var(--fgColor-danger);
+    background-color: var(--bgColor-danger-muted);
+}
+
+html .markdown-body .pl-c2 {
+    color: #f6f8fa;
+    background-color: #cf222e;
+}
+
+html .markdown-body .pl-sr .pl-cce {
+    font-weight: bold;
+    color: #116329;
+}
+
+html .markdown-body .pl-ml {
+    color: #3b2300;
+}
+
+html .markdown-body .pl-mh,
+html .markdown-body .pl-mh .pl-en,
+html .markdown-body .pl-ms {
+    font-weight: bold;
+    color: #0550ae;
+}
+
+html .markdown-body .pl-mi {
+    font-style: italic;
+    color: #1f2328;
+}
+
+html .markdown-body .pl-mb {
+    font-weight: bold;
+    color: #1f2328;
+}
+
+html .markdown-body .pl-md {
+    color: #82071e;
+    background-color: #ffebe9;
+}
+
+html .markdown-body .pl-mi1 {
+    color: #116329;
+    background-color: #dafbe1;
+}
+
+html .markdown-body .pl-mc {
+    color: #953800;
+    background-color: #ffd8b5;
+}
+
+html .markdown-body .pl-mi2 {
+    color: #d1d9e0;
+    background-color: #0550ae;
+}
+
+html .markdown-body .pl-mdr {
+    font-weight: bold;
+    color: #8250df;
+}
+
+html .markdown-body .pl-ba {
+    color: #59636e;
+}
+
+html .markdown-body .pl-sg {
+    color: #818b98;
+}
+
+html .markdown-body .pl-corl {
+    text-decoration: underline;
+    color: #0a3069;
+}
+
+html .markdown-body [role='button']:focus:not(:focus-visible),
+html .markdown-body [role='tabpanel'][tabindex='0']:focus:not(:focus-visible),
+html .markdown-body button:focus:not(:focus-visible),
+html .markdown-body summary:focus:not(:focus-visible),
+html .markdown-body a:focus:not(:focus-visible) {
+    outline: none;
+    box-shadow: none;
+}
+
+html .markdown-body [tabindex='0']:focus:not(:focus-visible),
+html .markdown-body details-dialog:focus:not(:focus-visible) {
+    outline: none;
+}
+
+html .markdown-body g-emoji {
+    display: inline-block;
+    min-width: 1ch;
+    font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-size: 1em;
+    font-style: normal !important;
+    font-weight: 400;
+    line-height: 1;
+    vertical-align: -0.075em;
+}
+
+html .markdown-body g-emoji img {
+    width: 1em;
+    height: 1em;
+}
+
+html .markdown-body a:has(> p, > div, > pre, > blockquote) {
+    display: block;
+}
+
+html .markdown-body a:has(> p, > div, > pre, > blockquote):not(:has(.snippet-clipboard-content, > pre)) {
+    width: fit-content;
+}
+
+html .markdown-body a:has(> p, > div, > pre, > blockquote):has(.snippet-clipboard-content, > pre):focus-visible {
+    outline: 2px solid var(--borderColor-accent-emphasis);
+    outline-offset: 2px;
+}
+
+html .markdown-body .task-list-item {
+    list-style-type: none;
+}
+
+html .markdown-body .task-list-item label {
+    font-weight: 400;
+}
+
+html .markdown-body .task-list-item.enabled label {
+    cursor: pointer;
+}
+
+html .markdown-body .task-list-item + .task-list-item {
+    margin-top: 0.25rem;
+}
+
+html .markdown-body .task-list-item .handle {
+    display: none;
+}
+
+html .markdown-body .task-list-item-checkbox {
+    margin: 0 0.2em 0.25em -1.4em;
+    vertical-align: middle;
+}
+
+html .markdown-body ul:dir(rtl) .task-list-item-checkbox {
+    margin: 0 -1.6em 0.25em 0.2em;
+}
+
+html .markdown-body ol:dir(rtl) .task-list-item-checkbox {
+    margin: 0 -1.6em 0.25em 0.2em;
+}
+
+html .markdown-body .contains-task-list:hover .task-list-item-convert-container,
+html .markdown-body .contains-task-list:focus-within .task-list-item-convert-container {
+    display: block;
+    width: auto;
+    height: 24px;
+    overflow: visible;
+    clip-path: none;
+}
+
+html .markdown-body ::-webkit-calendar-picker-indicator {
+    filter: invert(50%);
+}
+
+html .markdown-body .markdown-alert {
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    color: inherit;
+    border-left: 0.25em solid #d1d9e0;
+}
+
+html .markdown-body .markdown-alert > :first-child {
+    margin-top: 0;
+}
+
+html .markdown-body .markdown-alert > :last-child {
+    margin-bottom: 0;
+}
+
+html .markdown-body .markdown-alert .markdown-alert-title {
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+    line-height: 1;
+}
+
+html .markdown-body .markdown-alert.markdown-alert-note {
+    border-left-color: #0969da;
+}
+
+html .markdown-body .markdown-alert.markdown-alert-note .markdown-alert-title {
+    color: #0969da;
+}
+
+html .markdown-body .markdown-alert.markdown-alert-important {
+    border-left-color: #8250df;
+}
+
+html .markdown-body .markdown-alert.markdown-alert-important .markdown-alert-title {
+    color: #8250df;
+}
+
+html .markdown-body .markdown-alert.markdown-alert-warning {
+    border-left-color: #9a6700;
+}
+
+html .markdown-body .markdown-alert.markdown-alert-warning .markdown-alert-title {
+    color: #9a6700;
+}
+
+html .markdown-body .markdown-alert.markdown-alert-tip {
+    border-left-color: #1a7f37;
+}
+
+html .markdown-body .markdown-alert.markdown-alert-tip .markdown-alert-title {
+    color: #1a7f37;
+}
+
+html .markdown-body .markdown-alert.markdown-alert-caution {
+    border-left-color: #cf222e;
+}
+
+html .markdown-body .markdown-alert.markdown-alert-caution .markdown-alert-title {
+    color: #d1242f;
+}
+
+html .markdown-body > *:first-child > .heading-element:first-child {
+    margin-top: 0 !important;
+}
+
+html .markdown-body .highlight pre:has(+ .zeroclipboard-container) {
+    min-height: 52px;
+}
+
+/*dark */
+html[data-theme='dark'] .markdown-body {
+    color-scheme: dark;
+    /** CSS default easing. Use for hover state changes and micro-interactions. */
+    /** Accelerating motion. Use for elements exiting the viewport (moving off-screen). */
+    /** Smooth acceleration and deceleration. Use for elements moving or morphing within the viewport. */
+    /** Decelerating motion. Use for elements entering the viewport or appearing on screen. */
+    /** Constant motion with no acceleration. Use for continuous animations like progress bars or loaders. */
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    margin: 0;
+    font-weight: 400;
+    color: #f0f6fc;
+    background-color: #0d1117;
+    font-family:
+        -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+        'Segoe UI Emoji';
+    font-size: 16px;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+
+html[data-theme='dark'] .markdown-body a {
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+}
+
+html[data-theme='dark'] .markdown-body .octicon {
+    display: inline-block;
+    fill: currentColor;
+    vertical-align: text-bottom;
+}
+
+html[data-theme='dark'] .markdown-body h1:hover .anchor .octicon-link:before,
+html[data-theme='dark'] .markdown-body h2:hover .anchor .octicon-link:before,
+html[data-theme='dark'] .markdown-body h3:hover .anchor .octicon-link:before,
+html[data-theme='dark'] .markdown-body h4:hover .anchor .octicon-link:before,
+html[data-theme='dark'] .markdown-body h5:hover .anchor .octicon-link:before,
+html[data-theme='dark'] .markdown-body h6:hover .anchor .octicon-link:before {
+    width: 16px;
+    height: 16px;
+    content: ' ';
+    display: inline-block;
+    background-color: currentColor;
+    -webkit-mask-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' aria-hidden='true'><path fill-rule='evenodd' d='M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z'></path></svg>");
+    mask-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' aria-hidden='true'><path fill-rule='evenodd' d='M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z'></path></svg>");
+}
+
+html[data-theme='dark'] .markdown-body details,
+html[data-theme='dark'] .markdown-body figcaption,
+html[data-theme='dark'] .markdown-body figure {
+    display: block;
+}
+
+html[data-theme='dark'] .markdown-body summary {
+    display: list-item;
+}
+
+html[data-theme='dark'] .markdown-body [hidden] {
+    display: none !important;
+}
+
+html[data-theme='dark'] .markdown-body a {
+    background-color: rgba(0, 0, 0, 0);
+    color: #4493f8;
+    text-decoration: none;
+}
+
+html[data-theme='dark'] .markdown-body abbr[title] {
+    border-bottom: none;
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted;
+}
+
+html[data-theme='dark'] .markdown-body b,
+html[data-theme='dark'] .markdown-body strong {
+    font-weight: 600;
+}
+
+html[data-theme='dark'] .markdown-body dfn {
+    font-style: italic;
+}
+
+html[data-theme='dark'] .markdown-body h1 {
+    margin: 0.67em 0;
+    font-weight: 600;
+    padding-bottom: 0.3em;
+    font-size: 2em;
+    border-bottom: 1px solid #3d444db3;
+}
+
+html[data-theme='dark'] .markdown-body mark {
+    background-color: #bb800926;
+    color: #f0f6fc;
+}
+
+html[data-theme='dark'] .markdown-body small {
+    font-size: 90%;
+}
+
+html[data-theme='dark'] .markdown-body sub,
+html[data-theme='dark'] .markdown-body sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+html[data-theme='dark'] .markdown-body sub {
+    bottom: -0.25em;
+}
+
+html[data-theme='dark'] .markdown-body sup {
+    top: -0.5em;
+}
+
+html[data-theme='dark'] .markdown-body img {
+    border-style: none;
+    max-width: 100%;
+    box-sizing: content-box;
+}
+
+html[data-theme='dark'] .markdown-body code,
+html[data-theme='dark'] .markdown-body kbd,
+html[data-theme='dark'] .markdown-body pre,
+html[data-theme='dark'] .markdown-body samp {
+    font-family: monospace;
+    font-size: 1em;
+}
+
+html[data-theme='dark'] .markdown-body figure {
+    margin: 1em 2.5rem;
+}
+
+html[data-theme='dark'] .markdown-body hr {
+    box-sizing: content-box;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0);
+    border-bottom: 1px solid #3d444db3;
+    height: 0.25em;
+    padding: 0;
+    margin: 1.5rem 0;
+    background-color: #3d444d;
+    border: 0;
+}
+
+html[data-theme='dark'] .markdown-body input {
+    font: inherit;
+    margin: 0;
+    overflow: visible;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+html[data-theme='dark'] .markdown-body [type='button'],
+html[data-theme='dark'] .markdown-body [type='reset'],
+html[data-theme='dark'] .markdown-body [type='submit'] {
+    -webkit-appearance: button;
+    appearance: button;
+}
+
+html[data-theme='dark'] .markdown-body [type='checkbox'],
+html[data-theme='dark'] .markdown-body [type='radio'] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+html[data-theme='dark'] .markdown-body [type='number']::-webkit-inner-spin-button,
+html[data-theme='dark'] .markdown-body [type='number']::-webkit-outer-spin-button {
+    height: auto;
+}
+
+html[data-theme='dark'] .markdown-body [type='search']::-webkit-search-cancel-button,
+html[data-theme='dark'] .markdown-body [type='search']::-webkit-search-decoration {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+html[data-theme='dark'] .markdown-body ::-webkit-input-placeholder {
+    color: inherit;
+    opacity: 0.54;
+}
+
+html[data-theme='dark'] .markdown-body ::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    appearance: button;
+    font: inherit;
+}
+
+html[data-theme='dark'] .markdown-body a:hover {
+    text-decoration: underline;
+}
+
+html[data-theme='dark'] .markdown-body ::placeholder {
+    color: #9198a1;
+    opacity: 1;
+}
+
+html[data-theme='dark'] .markdown-body hr::before {
+    display: table;
+    content: '';
+}
+
+html[data-theme='dark'] .markdown-body hr::after {
+    display: table;
+    clear: both;
+    content: '';
+}
+
+html[data-theme='dark'] .markdown-body table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    display: block;
+    width: max-content;
+    max-width: 100%;
+    overflow: auto;
+    font-variant: tabular-nums;
+}
+
+html[data-theme='dark'] .markdown-body td,
+html[data-theme='dark'] .markdown-body th {
+    padding: 0;
+}
+
+html[data-theme='dark'] .markdown-body details summary {
+    cursor: pointer;
+}
+
+html[data-theme='dark'] .markdown-body a:focus,
+html[data-theme='dark'] .markdown-body [role='button']:focus,
+html[data-theme='dark'] .markdown-body input[type='radio']:focus,
+html[data-theme='dark'] .markdown-body input[type='checkbox']:focus {
+    outline: 2px solid var(--borderColor-accent-emphasis);
+    outline-offset: -2px;
+    box-shadow: none;
+}
+
+html[data-theme='dark'] .markdown-body a:focus:not(:focus-visible),
+html[data-theme='dark'] .markdown-body [role='button']:focus:not(:focus-visible),
+html[data-theme='dark'] .markdown-body input[type='radio']:focus:not(:focus-visible),
+html[data-theme='dark'] .markdown-body input[type='checkbox']:focus:not(:focus-visible) {
+    outline: solid 1px rgba(0, 0, 0, 0);
+}
+
+html[data-theme='dark'] .markdown-body a:focus-visible,
+html[data-theme='dark'] .markdown-body [role='button']:focus-visible,
+html[data-theme='dark'] .markdown-body input[type='radio']:focus-visible,
+html[data-theme='dark'] .markdown-body input[type='checkbox']:focus-visible {
+    outline: 2px solid var(--borderColor-accent-emphasis);
+    outline-offset: -2px;
+    box-shadow: none;
+}
+
+html[data-theme='dark'] .markdown-body a:not([class]):focus,
+html[data-theme='dark'] .markdown-body a:not([class]):focus-visible,
+html[data-theme='dark'] .markdown-body input[type='radio']:focus,
+html[data-theme='dark'] .markdown-body input[type='radio']:focus-visible,
+html[data-theme='dark'] .markdown-body input[type='checkbox']:focus,
+html[data-theme='dark'] .markdown-body input[type='checkbox']:focus-visible {
+    outline-offset: 0;
+}
+
+html[data-theme='dark'] .markdown-body kbd {
+    display: inline-block;
+    padding: 0.25rem;
+    font:
+        11px ui-monospace,
+        SFMono-Regular,
+        SF Mono,
+        Menlo,
+        Consolas,
+        Liberation Mono,
+        monospace;
+    line-height: 10px;
+    color: #f0f6fc;
+    vertical-align: middle;
+    background-color: #151b23;
+    border: solid 1px var(--borderColor-muted);
+    border-bottom-color: var(--borderColor-muted);
+    border-radius: 6px;
+    box-shadow: inset 0 -1px 0 var(--borderColor-muted);
+}
+
+html[data-theme='dark'] .markdown-body h1,
+html[data-theme='dark'] .markdown-body h2,
+html[data-theme='dark'] .markdown-body h3,
+html[data-theme='dark'] .markdown-body h4,
+html[data-theme='dark'] .markdown-body h5,
+html[data-theme='dark'] .markdown-body h6 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+html[data-theme='dark'] .markdown-body h2 {
+    font-weight: 600;
+    padding-bottom: 0.3em;
+    font-size: 1.5em;
+    border-bottom: 1px solid #3d444db3;
+}
+
+html[data-theme='dark'] .markdown-body h3 {
+    font-weight: 600;
+    font-size: 1.25em;
+}
+
+html[data-theme='dark'] .markdown-body h4 {
+    font-weight: 600;
+    font-size: 1em;
+}
+
+html[data-theme='dark'] .markdown-body h5 {
+    font-weight: 600;
+    font-size: 0.875em;
+}
+
+html[data-theme='dark'] .markdown-body h6 {
+    font-weight: 600;
+    font-size: 0.85em;
+    color: #9198a1;
+}
+
+html[data-theme='dark'] .markdown-body p {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+html[data-theme='dark'] .markdown-body blockquote {
+    margin: 0;
+    padding: 0 1em;
+    color: #9198a1;
+    border-left: 0.25em solid #3d444d;
+}
+
+html[data-theme='dark'] .markdown-body ul,
+html[data-theme='dark'] .markdown-body ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 2em;
+}
+
+html[data-theme='dark'] .markdown-body ol ol,
+html[data-theme='dark'] .markdown-body ul ol {
+    list-style-type: lower-roman;
+}
+
+html[data-theme='dark'] .markdown-body ul ul ol,
+html[data-theme='dark'] .markdown-body ul ol ol,
+html[data-theme='dark'] .markdown-body ol ul ol,
+html[data-theme='dark'] .markdown-body ol ol ol {
+    list-style-type: lower-alpha;
+}
+
+html[data-theme='dark'] .markdown-body dd {
+    margin-left: 0;
+}
+
+html[data-theme='dark'] .markdown-body tt,
+html[data-theme='dark'] .markdown-body code,
+html[data-theme='dark'] .markdown-body samp {
+    font-family:
+        ui-monospace,
+        SFMono-Regular,
+        SF Mono,
+        Menlo,
+        Consolas,
+        Liberation Mono,
+        monospace;
+    font-size: 12px;
+}
+
+html[data-theme='dark'] .markdown-body pre {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family:
+        ui-monospace,
+        SFMono-Regular,
+        SF Mono,
+        Menlo,
+        Consolas,
+        Liberation Mono,
+        monospace;
+    font-size: 12px;
+    word-wrap: normal;
+}
+
+html[data-theme='dark'] .markdown-body .octicon {
+    display: inline-block;
+    overflow: visible !important;
+    vertical-align: text-bottom;
+    fill: currentColor;
+}
+
+html[data-theme='dark'] .markdown-body input::-webkit-outer-spin-button,
+html[data-theme='dark'] .markdown-body input::-webkit-inner-spin-button {
+    margin: 0;
+    appearance: none;
+}
+
+html[data-theme='dark'] .markdown-body .mr-2 {
+    margin-right: 0.5rem !important;
+}
+
+.markdown-body::before {
+    display: table;
+    content: '';
+}
+
+.markdown-body::after {
+    display: table;
+    clear: both;
+    content: '';
+}
+
+html[data-theme='dark'] .markdown-body > *:first-child {
+    margin-top: 0 !important;
+}
+
+html[data-theme='dark'] .markdown-body > *:last-child {
+    margin-bottom: 0 !important;
+}
+
+html[data-theme='dark'] .markdown-body a:not([href]) {
+    color: inherit;
+    text-decoration: none;
+}
+
+html[data-theme='dark'] .markdown-body .absent {
+    color: #f85149;
+}
+
+html[data-theme='dark'] .markdown-body .anchor {
+    float: left;
+    padding-right: 0.25rem;
+    margin-left: -20px;
+    line-height: 1;
+}
+
+html[data-theme='dark'] .markdown-body .anchor:focus {
+    outline: none;
+}
+
+html[data-theme='dark'] .markdown-body p,
+html[data-theme='dark'] .markdown-body blockquote,
+html[data-theme='dark'] .markdown-body ul,
+html[data-theme='dark'] .markdown-body ol,
+html[data-theme='dark'] .markdown-body dl,
+html[data-theme='dark'] .markdown-body table,
+html[data-theme='dark'] .markdown-body pre,
+html[data-theme='dark'] .markdown-body details {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+html[data-theme='dark'] .markdown-body blockquote > :first-child {
+    margin-top: 0;
+}
+
+html[data-theme='dark'] .markdown-body blockquote > :last-child {
+    margin-bottom: 0;
+}
+
+html[data-theme='dark'] .markdown-body h1 .octicon-link,
+html[data-theme='dark'] .markdown-body h2 .octicon-link,
+html[data-theme='dark'] .markdown-body h3 .octicon-link,
+html[data-theme='dark'] .markdown-body h4 .octicon-link,
+html[data-theme='dark'] .markdown-body h5 .octicon-link,
+html[data-theme='dark'] .markdown-body h6 .octicon-link {
+    color: #f0f6fc;
+    vertical-align: middle;
+    visibility: hidden;
+}
+
+html[data-theme='dark'] .markdown-body h1:hover .anchor,
+html[data-theme='dark'] .markdown-body h2:hover .anchor,
+html[data-theme='dark'] .markdown-body h3:hover .anchor,
+html[data-theme='dark'] .markdown-body h4:hover .anchor,
+html[data-theme='dark'] .markdown-body h5:hover .anchor,
+html[data-theme='dark'] .markdown-body h6:hover .anchor {
+    text-decoration: none;
+}
+
+html[data-theme='dark'] .markdown-body h1:hover .anchor .octicon-link,
+html[data-theme='dark'] .markdown-body h2:hover .anchor .octicon-link,
+html[data-theme='dark'] .markdown-body h3:hover .anchor .octicon-link,
+html[data-theme='dark'] .markdown-body h4:hover .anchor .octicon-link,
+html[data-theme='dark'] .markdown-body h5:hover .anchor .octicon-link,
+html[data-theme='dark'] .markdown-body h6:hover .anchor .octicon-link {
+    visibility: visible;
+}
+
+html[data-theme='dark'] .markdown-body h1 tt,
+html[data-theme='dark'] .markdown-body h1 code,
+html[data-theme='dark'] .markdown-body h2 tt,
+html[data-theme='dark'] .markdown-body h2 code,
+html[data-theme='dark'] .markdown-body h3 tt,
+html[data-theme='dark'] .markdown-body h3 code,
+html[data-theme='dark'] .markdown-body h4 tt,
+html[data-theme='dark'] .markdown-body h4 code,
+html[data-theme='dark'] .markdown-body h5 tt,
+html[data-theme='dark'] .markdown-body h5 code,
+html[data-theme='dark'] .markdown-body h6 tt,
+html[data-theme='dark'] .markdown-body h6 code {
+    padding: 0 0.2em;
+    font-size: inherit;
+}
+
+html[data-theme='dark'] .markdown-body summary h1,
+html[data-theme='dark'] .markdown-body summary h2,
+html[data-theme='dark'] .markdown-body summary h3,
+html[data-theme='dark'] .markdown-body summary h4,
+html[data-theme='dark'] .markdown-body summary h5,
+html[data-theme='dark'] .markdown-body summary h6 {
+    display: inline-block;
+}
+
+html[data-theme='dark'] .markdown-body summary h1 .anchor,
+html[data-theme='dark'] .markdown-body summary h2 .anchor,
+html[data-theme='dark'] .markdown-body summary h3 .anchor,
+html[data-theme='dark'] .markdown-body summary h4 .anchor,
+html[data-theme='dark'] .markdown-body summary h5 .anchor,
+html[data-theme='dark'] .markdown-body summary h6 .anchor {
+    margin-left: -40px;
+}
+
+html[data-theme='dark'] .markdown-body summary h1,
+html[data-theme='dark'] .markdown-body summary h2 {
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+html[data-theme='dark'] .markdown-body ul.no-list,
+html[data-theme='dark'] .markdown-body ol.no-list {
+    padding: 0;
+    list-style-type: none;
+}
+
+html[data-theme='dark'] .markdown-body ol[type='a s'] {
+    list-style-type: lower-alpha;
+}
+
+html[data-theme='dark'] .markdown-body ol[type='A s'] {
+    list-style-type: upper-alpha;
+}
+
+html[data-theme='dark'] .markdown-body ol[type='i s'] {
+    list-style-type: lower-roman;
+}
+
+html[data-theme='dark'] .markdown-body ol[type='I s'] {
+    list-style-type: upper-roman;
+}
+
+html[data-theme='dark'] .markdown-body ol[type='1'] {
+    list-style-type: decimal;
+}
+
+html[data-theme='dark'] .markdown-body div > ol:not([type]) {
+    list-style-type: decimal;
+}
+
+html[data-theme='dark'] .markdown-body ul ul,
+html[data-theme='dark'] .markdown-body ul ol,
+html[data-theme='dark'] .markdown-body ol ol,
+html[data-theme='dark'] .markdown-body ol ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+html[data-theme='dark'] .markdown-body li > p {
+    margin-top: 1rem;
+}
+
+html[data-theme='dark'] .markdown-body li + li {
+    margin-top: 0.25em;
+}
+
+html[data-theme='dark'] .markdown-body dl {
+    padding: 0;
+}
+
+html[data-theme='dark'] .markdown-body dl dt {
+    padding: 0;
+    margin-top: 1rem;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: 600;
+}
+
+html[data-theme='dark'] .markdown-body dl dd {
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}
+
+html[data-theme='dark'] .markdown-body table th {
+    font-weight: 600;
+}
+
+html[data-theme='dark'] .markdown-body table th,
+html[data-theme='dark'] .markdown-body table td {
+    padding: 6px 13px;
+    border: 1px solid #3d444d;
+}
+
+html[data-theme='dark'] .markdown-body table td > :last-child {
+    margin-bottom: 0;
+}
+
+html[data-theme='dark'] .markdown-body table tr {
+    background-color: #0d1117;
+    border-top: 1px solid #3d444db3;
+}
+
+html[data-theme='dark'] .markdown-body table tr:nth-child(2n) {
+    background-color: #151b23;
+}
+
+html[data-theme='dark'] .markdown-body table img {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+html[data-theme='dark'] .markdown-body img[align='right'] {
+    padding-left: 20px;
+}
+
+html[data-theme='dark'] .markdown-body img[align='left'] {
+    padding-right: 20px;
+}
+
+html[data-theme='dark'] .markdown-body .emoji {
+    max-width: none;
+    vertical-align: text-top;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+html[data-theme='dark'] .markdown-body span.frame {
+    display: block;
+    overflow: hidden;
+}
+
+html[data-theme='dark'] .markdown-body span.frame > span {
+    display: block;
+    float: left;
+    width: auto;
+    padding: 7px;
+    margin: 13px 0 0;
+    overflow: hidden;
+    border: 1px solid #3d444d;
+}
+
+html[data-theme='dark'] .markdown-body span.frame span img {
+    display: block;
+    float: left;
+}
+
+html[data-theme='dark'] .markdown-body span.frame span span {
+    display: block;
+    padding: 5px 0 0;
+    clear: both;
+    color: #f0f6fc;
+}
+
+html[data-theme='dark'] .markdown-body span.align-center {
+    display: block;
+    overflow: hidden;
+    clear: both;
+}
+
+html[data-theme='dark'] .markdown-body span.align-center > span {
+    display: block;
+    margin: 13px auto 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+html[data-theme='dark'] .markdown-body span.align-center span img {
+    margin: 0 auto;
+    text-align: center;
+}
+
+html[data-theme='dark'] .markdown-body span.align-right {
+    display: block;
+    overflow: hidden;
+    clear: both;
+}
+
+html[data-theme='dark'] .markdown-body span.align-right > span {
+    display: block;
+    margin: 13px 0 0;
+    overflow: hidden;
+    text-align: right;
+}
+
+html[data-theme='dark'] .markdown-body span.align-right span img {
+    margin: 0;
+    text-align: right;
+}
+
+html[data-theme='dark'] .markdown-body span.float-left {
+    display: block;
+    float: left;
+    margin-right: 13px;
+    overflow: hidden;
+}
+
+html[data-theme='dark'] .markdown-body span.float-left span {
+    margin: 13px 0 0;
+}
+
+html[data-theme='dark'] .markdown-body span.float-right {
+    display: block;
+    float: right;
+    margin-left: 13px;
+    overflow: hidden;
+}
+
+html[data-theme='dark'] .markdown-body span.float-right > span {
+    display: block;
+    margin: 13px auto 0;
+    overflow: hidden;
+    text-align: right;
+}
+
+html[data-theme='dark'] .markdown-body code,
+html[data-theme='dark'] .markdown-body tt {
+    padding: 0.2em 0.4em;
+    margin: 0;
+    font-size: 85%;
+    white-space: break-spaces;
+    background-color: #656c7633;
+    border-radius: 6px;
+}
+
+html[data-theme='dark'] .markdown-body code br,
+html[data-theme='dark'] .markdown-body tt br {
+    display: none;
+}
+
+html[data-theme='dark'] .markdown-body del code {
+    text-decoration: inherit;
+}
+
+html[data-theme='dark'] .markdown-body samp {
+    font-size: 85%;
+}
+
+html[data-theme='dark'] .markdown-body pre code {
+    font-size: 100%;
+}
+
+html[data-theme='dark'] .markdown-body pre > code {
+    padding: 0;
+    margin: 0;
+    word-break: normal;
+    white-space: pre;
+    background: rgba(0, 0, 0, 0);
+    border: 0;
+}
+
+html[data-theme='dark'] .markdown-body .highlight {
+    margin-bottom: 1rem;
+}
+
+html[data-theme='dark'] .markdown-body .highlight pre {
+    margin-bottom: 0;
+    word-break: normal;
+}
+
+html[data-theme='dark'] .markdown-body .highlight pre,
+html[data-theme='dark'] .markdown-body pre {
+    padding: 1rem;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    color: #f0f6fc;
+    background-color: #151b23;
+    border-radius: 6px;
+}
+
+html[data-theme='dark'] .markdown-body pre code,
+html[data-theme='dark'] .markdown-body pre tt {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    line-height: inherit;
+    word-wrap: normal;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+}
+
+html[data-theme='dark'] .markdown-body .csv-data td,
+html[data-theme='dark'] .markdown-body .csv-data th {
+    padding: 5px;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 1;
+    text-align: left;
+    white-space: nowrap;
+}
+
+html[data-theme='dark'] .markdown-body .csv-data .blob-num {
+    padding: 10px 0.5rem 9px;
+    text-align: right;
+    background: #0d1117;
+    border: 0;
+}
+
+html[data-theme='dark'] .markdown-body .csv-data tr {
+    border-top: 0;
+}
+
+html[data-theme='dark'] .markdown-body .csv-data th {
+    font-weight: 600;
+    background: #151b23;
+    border-top: 0;
+}
+
+html[data-theme='dark'] .markdown-body [data-footnote-ref]::before {
+    content: '[';
+}
+
+html[data-theme='dark'] .markdown-body [data-footnote-ref]::after {
+    content: ']';
+}
+
+html[data-theme='dark'] .markdown-body .footnotes {
+    font-size: 12px;
+    color: #9198a1;
+    border-top: 1px solid #3d444d;
+}
+
+html[data-theme='dark'] .markdown-body .footnotes ol {
+    padding-left: 1rem;
+}
+
+html[data-theme='dark'] .markdown-body .footnotes ol ul {
+    display: inline-block;
+    padding-left: 1rem;
+    margin-top: 1rem;
+}
+
+html[data-theme='dark'] .markdown-body .footnotes li {
+    position: relative;
+}
+
+html[data-theme='dark'] .markdown-body .footnotes li:target::before {
+    position: absolute;
+    top: calc(0.5rem * -1);
+    right: calc(0.5rem * -1);
+    bottom: calc(0.5rem * -1);
+    left: calc(1.5rem * -1);
+    pointer-events: none;
+    content: '';
+    border: 2px solid #1f6feb;
+    border-radius: 6px;
+}
+
+html[data-theme='dark'] .markdown-body .footnotes li:target {
+    color: #f0f6fc;
+}
+
+html[data-theme='dark'] .markdown-body .footnotes .data-footnote-backref g-emoji {
+    font-family: monospace;
+}
+
+html[data-theme='dark'] .markdown-body .pl-c {
+    color: #9198a1;
+}
+
+html[data-theme='dark'] .markdown-body .pl-c1,
+html[data-theme='dark'] .markdown-body .pl-s .pl-v {
+    color: #79c0ff;
+}
+
+html[data-theme='dark'] .markdown-body .pl-e,
+html[data-theme='dark'] .markdown-body .pl-en {
+    color: #d2a8ff;
+}
+
+html[data-theme='dark'] .markdown-body .pl-smi,
+html[data-theme='dark'] .markdown-body .pl-s .pl-s1 {
+    color: #f0f6fc;
+}
+
+html[data-theme='dark'] .markdown-body .pl-ent {
+    color: #7ee787;
+}
+
+html[data-theme='dark'] .markdown-body .pl-k {
+    color: #ff7b72;
+}
+
+html[data-theme='dark'] .markdown-body .pl-s,
+html[data-theme='dark'] .markdown-body .pl-pds,
+html[data-theme='dark'] .markdown-body .pl-s .pl-pse .pl-s1,
+html[data-theme='dark'] .markdown-body .pl-sr,
+html[data-theme='dark'] .markdown-body .pl-sr .pl-cce,
+html[data-theme='dark'] .markdown-body .pl-sr .pl-sre,
+html[data-theme='dark'] .markdown-body .pl-sr .pl-sra {
+    color: #a5d6ff;
+}
+
+html[data-theme='dark'] .markdown-body .pl-v,
+html[data-theme='dark'] .markdown-body .pl-smw {
+    color: #ffa657;
+}
+
+html[data-theme='dark'] .markdown-body .pl-bu {
+    color: #f85149;
+}
+
+html[data-theme='dark'] .markdown-body .pl-ii {
+    color: var(--fgColor-danger);
+    background-color: var(--bgColor-danger-muted);
+}
+
+html[data-theme='dark'] .markdown-body .pl-c2 {
+    color: #f0f6fc;
+    background-color: #b62324;
+}
+
+html[data-theme='dark'] .markdown-body .pl-sr .pl-cce {
+    font-weight: bold;
+    color: #7ee787;
+}
+
+html[data-theme='dark'] .markdown-body .pl-ml {
+    color: #f2cc60;
+}
+
+html[data-theme='dark'] .markdown-body .pl-mh,
+html[data-theme='dark'] .markdown-body .pl-mh .pl-en,
+html[data-theme='dark'] .markdown-body .pl-ms {
+    font-weight: bold;
+    color: #1f6feb;
+}
+
+html[data-theme='dark'] .markdown-body .pl-mi {
+    font-style: italic;
+    color: #f0f6fc;
+}
+
+html[data-theme='dark'] .markdown-body .pl-mb {
+    font-weight: bold;
+    color: #f0f6fc;
+}
+
+html[data-theme='dark'] .markdown-body .pl-md {
+    color: #ffdcd7;
+    background-color: #67060c;
+}
+
+html[data-theme='dark'] .markdown-body .pl-mi1 {
+    color: #aff5b4;
+    background-color: #033a16;
+}
+
+html[data-theme='dark'] .markdown-body .pl-mc {
+    color: #ffdfb6;
+    background-color: #5a1e02;
+}
+
+html[data-theme='dark'] .markdown-body .pl-mi2 {
+    color: #f0f6fc;
+    background-color: #1158c7;
+}
+
+html[data-theme='dark'] .markdown-body .pl-mdr {
+    font-weight: bold;
+    color: #d2a8ff;
+}
+
+html[data-theme='dark'] .markdown-body .pl-ba {
+    color: #9198a1;
+}
+
+html[data-theme='dark'] .markdown-body .pl-sg {
+    color: #3d444d;
+}
+
+html[data-theme='dark'] .markdown-body .pl-corl {
+    text-decoration: underline;
+    color: #a5d6ff;
+}
+
+html[data-theme='dark'] .markdown-body [role='button']:focus:not(:focus-visible),
+html[data-theme='dark'] .markdown-body [role='tabpanel'][tabindex='0']:focus:not(:focus-visible),
+html[data-theme='dark'] .markdown-body button:focus:not(:focus-visible),
+html[data-theme='dark'] .markdown-body summary:focus:not(:focus-visible),
+html[data-theme='dark'] .markdown-body a:focus:not(:focus-visible) {
+    outline: none;
+    box-shadow: none;
+}
+
+html[data-theme='dark'] .markdown-body [tabindex='0']:focus:not(:focus-visible),
+html[data-theme='dark'] .markdown-body details-dialog:focus:not(:focus-visible) {
+    outline: none;
+}
+
+html[data-theme='dark'] .markdown-body g-emoji {
+    display: inline-block;
+    min-width: 1ch;
+    font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-size: 1em;
+    font-style: normal !important;
+    font-weight: 400;
+    line-height: 1;
+    vertical-align: -0.075em;
+}
+
+html[data-theme='dark'] .markdown-body g-emoji img {
+    width: 1em;
+    height: 1em;
+}
+
+html[data-theme='dark'] .markdown-body a:has(> p, > div, > pre, > blockquote) {
+    display: block;
+}
+
+html[data-theme='dark']
+    .markdown-body
+    a:has(> p, > div, > pre, > blockquote):not(:has(.snippet-clipboard-content, > pre)) {
+    width: fit-content;
+}
+
+html[data-theme='dark']
+    .markdown-body
+    a:has(> p, > div, > pre, > blockquote):has(.snippet-clipboard-content, > pre):focus-visible {
+    outline: 2px solid var(--borderColor-accent-emphasis);
+    outline-offset: 2px;
+}
+
+html[data-theme='dark'] .markdown-body .task-list-item {
+    list-style-type: none;
+}
+
+html[data-theme='dark'] .markdown-body .task-list-item label {
+    font-weight: 400;
+}
+
+html[data-theme='dark'] .markdown-body .task-list-item.enabled label {
+    cursor: pointer;
+}
+
+html[data-theme='dark'] .markdown-body .task-list-item + .task-list-item {
+    margin-top: 0.25rem;
+}
+
+html[data-theme='dark'] .markdown-body .task-list-item .handle {
+    display: none;
+}
+
+html[data-theme='dark'] .markdown-body .task-list-item-checkbox {
+    margin: 0 0.2em 0.25em -1.4em;
+    vertical-align: middle;
+}
+
+html[data-theme='dark'] .markdown-body ul:dir(rtl) .task-list-item-checkbox {
+    margin: 0 -1.6em 0.25em 0.2em;
+}
+
+html[data-theme='dark'] .markdown-body ol:dir(rtl) .task-list-item-checkbox {
+    margin: 0 -1.6em 0.25em 0.2em;
+}
+
+html[data-theme='dark'] .markdown-body .contains-task-list:hover .task-list-item-convert-container,
+html[data-theme='dark'] .markdown-body .contains-task-list:focus-within .task-list-item-convert-container {
+    display: block;
+    width: auto;
+    height: 24px;
+    overflow: visible;
+    clip-path: none;
+}
+
+html[data-theme='dark'] .markdown-body ::-webkit-calendar-picker-indicator {
+    filter: invert(50%);
+}
+
+html[data-theme='dark'] .markdown-body .markdown-alert {
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    color: inherit;
+    border-left: 0.25em solid #3d444d;
+}
+
+html[data-theme='dark'] .markdown-body .markdown-alert > :first-child {
+    margin-top: 0;
+}
+
+html[data-theme='dark'] .markdown-body .markdown-alert > :last-child {
+    margin-bottom: 0;
+}
+
+html[data-theme='dark'] .markdown-body .markdown-alert .markdown-alert-title {
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+    line-height: 1;
+}
+
+html[data-theme='dark'] .markdown-body .markdown-alert.markdown-alert-note {
+    border-left-color: #1f6feb;
+}
+
+html[data-theme='dark'] .markdown-body .markdown-alert.markdown-alert-note .markdown-alert-title {
+    color: #4493f8;
+}
+
+html[data-theme='dark'] .markdown-body .markdown-alert.markdown-alert-important {
+    border-left-color: #8957e5;
+}
+
+html[data-theme='dark'] .markdown-body .markdown-alert.markdown-alert-important .markdown-alert-title {
+    color: #ab7df8;
+}
+
+html[data-theme='dark'] .markdown-body .markdown-alert.markdown-alert-warning {
+    border-left-color: #9e6a03;
+}
+
+html[data-theme='dark'] .markdown-body .markdown-alert.markdown-alert-warning .markdown-alert-title {
+    color: #d29922;
+}
+
+html[data-theme='dark'] .markdown-body .markdown-alert.markdown-alert-tip {
+    border-left-color: #238636;
+}
+
+html[data-theme='dark'] .markdown-body .markdown-alert.markdown-alert-tip .markdown-alert-title {
+    color: #3fb950;
+}
+
+html[data-theme='dark'] .markdown-body .markdown-alert.markdown-alert-caution {
+    border-left-color: #da3633;
+}
+
+html[data-theme='dark'] .markdown-body .markdown-alert.markdown-alert-caution .markdown-alert-title {
+    color: #f85149;
+}
+
+html[data-theme='dark'] .markdown-body > *:first-child > .heading-element:first-child {
+    margin-top: 0 !important;
+}
+
+html[data-theme='dark'] .markdown-body .highlight pre:has(+ .zeroclipboard-container) {
+    min-height: 52px;
+}

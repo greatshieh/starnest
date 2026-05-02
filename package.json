@@ -1,0 +1,45 @@
+{
+  "name": "starnest",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "tauri": "tauri"
+  },
+  "dependencies": {
+    "@floating-ui/vue": "^1.1.11",
+    "@tauri-apps/api": "^2",
+    "@tauri-apps/plugin-dialog": "~2.7.0",
+    "@tauri-apps/plugin-fs": "~2.5.0",
+    "@tauri-apps/plugin-opener": "^2",
+    "@tauri-apps/plugin-os": "~2.3.2",
+    "@types/marked": "^6.0.0",
+    "@unocss/preset-icons": "^66.6.8",
+    "@visactor/vtable": "^1.26.0",
+    "@vueuse/core": "^14.2.1",
+    "markdown-it": "^14.1.1",
+    "marked": "^18.0.0",
+    "pinia": "^3.0.4",
+    "vditor": "^3.11.2",
+    "vue": "^3.5.13",
+    "vue-i18n": "^11.4.0",
+    "vue-router": "^4.6.4",
+    "vue3-virtual-scroll-list": "^0.2.1"
+  },
+  "devDependencies": {
+    "@iconify/utils": "^3.1.0",
+    "@tauri-apps/cli": "^2",
+    "@types/markdown-it": "^14.1.2",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "typescript": "~5.6.2",
+    "unocss": "^66.6.8",
+    "unplugin-auto-import": "^21.0.0",
+    "unplugin-icons": "^23.0.1",
+    "unplugin-vue-components": "^32.0.0",
+    "vite": "^6.0.3",
+    "vue-tsc": "^2.1.10"
+  }
+}
