@@ -153,7 +153,7 @@ onUnmounted(() => {
                     v-show="showOption"
                     class="bg-card z-999 rounded-md w-auto border-light"
                     :style="floatingStyles">
-                    <li>账号设置</li>
+                    <li @click="showModal = true">账号设置</li>
                     <li class="border border-b-solid border-t-solid">切换账号</li>
                     <li @click="handleLogout">退出登录</li>
                 </ul>
